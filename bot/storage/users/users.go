@@ -32,6 +32,9 @@ var (
 	userPrefs     = make(map[int64]UserPreferences)
 	currentCities = make(map[int64]string)
 	cacheMutex    sync.RWMutex
+
+	debounceTimer *time.Timer
+    debounceMu    sync.Mutex
 )
 
 func SetCurrentCity(chatID int64, city string) {
@@ -46,7 +49,8 @@ func SetCurrentCity(chatID int64, city string) {
 	prefs := userPrefs[chatID]
     prefs.LastCity = city
     userPrefs[chatID] = prefs
-	go safeSave()
+	//go safeSave()
+	debouncedSave()
 }
 
 func GetCurrentCity(chatID int64) (string, bool) {
@@ -71,7 +75,8 @@ func SetForecastCity(chatID int64, city string) {
 	prefs := userPrefs[chatID]
 	prefs.ForecastCity = city
 	userPrefs[chatID] = prefs
-	go safeSave()
+	//go safeSave()
+	debouncedSave()
 }
 
 func GetForecastCity(chatID int64) (string, bool) {
@@ -91,7 +96,8 @@ func SetUserForecast(chatID int64, wantForecast bool, mskHour int, localHour int
 	prefs.ForecastMskHour   = mskHour
 	prefs.ForecastLocalHour = localHour
 	userPrefs[chatID]       = prefs
-	go safeSave()
+	//go safeSave()
+	debouncedSave()
 }
 
 func GetUserForecastPrefs(chatID int64) (bool, int, bool) {
@@ -112,7 +118,8 @@ func SetAwaitingForecastHour(chatID int64, awaiting bool) {
 	prefs := userPrefs[chatID]
 	prefs.AwaitingForecastHour = awaiting
 	userPrefs[chatID] = prefs
-	go safeSave()
+	//go safeSave()
+	debouncedSave()
 }
 
 func IsAwaitingForecastHour(chatID int64) bool {
@@ -128,7 +135,8 @@ func WantChangeDailyCity(chatID int64, want bool) {
 	prefs := userPrefs[chatID]
 	prefs.WantChangeCity = want
 	userPrefs[chatID] = prefs
-	go safeSave()
+	//go safeSave()
+	debouncedSave()
 }
 
 func IsChangingCity(chatID int64) bool {
@@ -206,6 +214,19 @@ func safeSave() {
 	if err := saveUserCache(); err != nil {
 		fmt.Println("[UserCache] Ошибка сохранения:", err)
 	}
+}
+
+func debouncedSave() {
+	debounceMu.Lock()
+	defer debounceMu.Unlock()
+
+	if debounceTimer != nil {
+		debounceTimer.Stop() // остановить предыдущий таймер
+	}
+
+	debounceTimer = time.AfterFunc(time.Minute, func() {
+		safeSave()
+	})
 }
 
 func StartAutoSave() {
