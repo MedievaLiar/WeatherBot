@@ -1,0 +1,29 @@
+last_updated: 2025-05-26T05:24:33.1220286+03:00
+data:
+    city: Москва
+    morning:
+        temperature: 21
+        feelslike: 16
+        humidity: 34
+        windspeed: 6
+        precipitation: пасмурно
+    day:
+        temperature: 26
+        feelslike: 21
+        humidity: 22
+        windspeed: 7
+        precipitation: пасмурно
+    evening:
+        temperature: 24
+        feelslike: 20
+        humidity: 28
+        windspeed: 4
+        precipitation: пасмурно
+    night:
+        temperature: 19
+        feelslike: 16
+        humidity: 41
+        windspeed: 2
+        precipitation: пасмурно
+    sunrise: "03:56"
+    sunset: "20:57"

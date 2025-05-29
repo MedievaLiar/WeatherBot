@@ -1,0 +1,29 @@
+last_updated: 2025-05-28T15:14:02.888056285+03:00
+data:
+    city: Уссурийск
+    morning:
+        temperature: 15
+        feelslike: 12
+        humidity: 70
+        windspeed: 5
+        precipitation: облачно с прояснениями
+    day:
+        temperature: 25
+        feelslike: 22
+        humidity: 40
+        windspeed: 7
+        precipitation: ясно
+    evening:
+        temperature: 21
+        feelslike: 16
+        humidity: 51
+        windspeed: 7
+        precipitation: малооблачно
+    night:
+        temperature: 14
+        feelslike: 11
+        humidity: 73
+        windspeed: 5
+        precipitation: ясно
+    sunrise: "05:33"
+    sunset: "20:46"

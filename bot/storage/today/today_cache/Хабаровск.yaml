@@ -1,0 +1,29 @@
+last_updated: 2025-05-28T16:00:01.684223126+03:00
+data:
+    city: Хабаровск
+    morning:
+        temperature: 19
+        feelslike: 16
+        humidity: 58
+        windspeed: 6
+        precipitation: пасмурно
+    day:
+        temperature: 22.785
+        feelslike: 21.115000000000002
+        humidity: 48
+        windspeed: 3.55
+        precipitation: облачно с прояснениями
+    evening:
+        temperature: 21.34
+        feelslike: 19.235
+        humidity: 52
+        windspeed: 3.0145833333333334
+        precipitation: облачно с прояснениями
+    night:
+        temperature: 21.8
+        feelslike: 19.86
+        humidity: 53
+        windspeed: 3.725
+        precipitation: малооблачно
+    sunrise: "05:03"
+    sunset: "20:50"

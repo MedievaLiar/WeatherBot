@@ -1,0 +1,1346 @@
+[
+  {
+    "AccuLumenBrightnessIndex": 0,
+    "Ceiling": {
+      "Unit": "m",
+      "UnitType": 5,
+      "Value": 9144
+    },
+    "CloudCover": 43,
+    "DateTime": "2025-05-23T21:00:00+10:00",
+    "DewPoint": {
+      "Unit": "C",
+      "UnitType": 17,
+      "Value": 7.5
+    },
+    "EpochDateTime": 1747998000,
+    "Evapotranspiration": {
+      "Unit": "mm",
+      "UnitType": 3,
+      "Value": 0
+    },
+    "HasPrecipitation": false,
+    "Ice": {
+      "Unit": "mm",
+      "UnitType": 3,
+      "Value": 0
+    },
+    "IceProbability": 0,
+    "IconPhrase": "Облачно с прояснениями",
+    "IndoorRelativeHumidity": 44,
+    "IsDaylight": false,
+    "Link": "http://www.accuweather.com/ru/ru/vladivostok/294927/hourly-weather-forecast/294927?day=1\u0026hbhhour=21\u0026unit=c",
+    "MobileLink": "http://www.accuweather.com/ru/ru/vladivostok/294927/hourly-weather-forecast/294927?day=1\u0026hbhhour=21\u0026unit=c",
+    "PrecipitationProbability": 0,
+    "Rain": {
+      "Unit": "mm",
+      "UnitType": 3,
+      "Value": 0
+    },
+    "RainProbability": 0,
+    "RealFeelTemperature": {
+      "Phrase": "Зябко",
+      "Unit": "C",
+      "UnitType": 17,
+      "Value": 9.2
+    },
+    "RealFeelTemperatureShade": {
+      "Phrase": "Зябко",
+      "Unit": "C",
+      "UnitType": 17,
+      "Value": 9.2
+    },
+    "RelativeHumidity": 74,
+    "Snow": {
+      "Unit": "cm",
+      "UnitType": 4,
+      "Value": 0
+    },
+    "SnowProbability": 0,
+    "SolarIrradiance": {
+      "Unit": "W/m²",
+      "UnitType": 33,
+      "Value": 0
+    },
+    "Temperature": {
+      "Unit": "C",
+      "UnitType": 17,
+      "Value": 11.9
+    },
+    "ThunderstormProbability": 0,
+    "TotalLiquid": {
+      "Unit": "mm",
+      "UnitType": 3,
+      "Value": 0
+    },
+    "UVIndex": 0,
+    "UVIndexText": "Низк.",
+    "Visibility": {
+      "Unit": "km",
+      "UnitType": 6,
+      "Value": 16.1
+    },
+    "WeatherIcon": 35,
+    "WetBulbGlobeTemperature": {
+      "Unit": "C",
+      "UnitType": 17,
+      "Value": 11.7
+    },
+    "WetBulbTemperature": {
+      "Unit": "C",
+      "UnitType": 17,
+      "Value": 9.8
+    },
+    "Wind": {
+      "Direction": {
+        "Degrees": 182,
+        "English": "S",
+        "Localized": "Ю"
+      },
+      "Speed": {
+        "Unit": "km/h",
+        "UnitType": 7,
+        "Value": 16.7
+      }
+    },
+    "WindGust": {
+      "Speed": {
+        "Unit": "km/h",
+        "UnitType": 7,
+        "Value": 20.4
+      }
+    }
+  },
+  {
+    "AccuLumenBrightnessIndex": 0,
+    "Ceiling": {
+      "Unit": "m",
+      "UnitType": 5,
+      "Value": 9144
+    },
+    "CloudCover": 43,
+    "DateTime": "2025-05-23T22:00:00+10:00",
+    "DewPoint": {
+      "Unit": "C",
+      "UnitType": 17,
+      "Value": 7.5
+    },
+    "EpochDateTime": 1748001600,
+    "Evapotranspiration": {
+      "Unit": "mm",
+      "UnitType": 3,
+      "Value": 0
+    },
+    "HasPrecipitation": false,
+    "Ice": {
+      "Unit": "mm",
+      "UnitType": 3,
+      "Value": 0
+    },
+    "IceProbability": 0,
+    "IconPhrase": "Облачно с прояснениями",
+    "IndoorRelativeHumidity": 44,
+    "IsDaylight": false,
+    "Link": "http://www.accuweather.com/ru/ru/vladivostok/294927/hourly-weather-forecast/294927?day=1\u0026hbhhour=22\u0026unit=c",
+    "MobileLink": "http://www.accuweather.com/ru/ru/vladivostok/294927/hourly-weather-forecast/294927?day=1\u0026hbhhour=22\u0026unit=c",
+    "PrecipitationProbability": 0,
+    "Rain": {
+      "Unit": "mm",
+      "UnitType": 3,
+      "Value": 0
+    },
+    "RainProbability": 0,
+    "RealFeelTemperature": {
+      "Phrase": "Зябко",
+      "Unit": "C",
+      "UnitType": 17,
+      "Value": 8.7
+    },
+    "RealFeelTemperatureShade": {
+      "Phrase": "Зябко",
+      "Unit": "C",
+      "UnitType": 17,
+      "Value": 8.7
+    },
+    "RelativeHumidity": 78,
+    "Snow": {
+      "Unit": "cm",
+      "UnitType": 4,
+      "Value": 0
+    },
+    "SnowProbability": 0,
+    "SolarIrradiance": {
+      "Unit": "W/m²",
+      "UnitType": 33,
+      "Value": 0
+    },
+    "Temperature": {
+      "Unit": "C",
+      "UnitType": 17,
+      "Value": 11.3
+    },
+    "ThunderstormProbability": 0,
+    "TotalLiquid": {
+      "Unit": "mm",
+      "UnitType": 3,
+      "Value": 0
+    },
+    "UVIndex": 0,
+    "UVIndexText": "Низк.",
+    "Visibility": {
+      "Unit": "km",
+      "UnitType": 6,
+      "Value": 16.1
+    },
+    "WeatherIcon": 35,
+    "WetBulbGlobeTemperature": {
+      "Unit": "C",
+      "UnitType": 17,
+      "Value": 11.4
+    },
+    "WetBulbTemperature": {
+      "Unit": "C",
+      "UnitType": 17,
+      "Value": 9.5
+    },
+    "Wind": {
+      "Direction": {
+        "Degrees": 163,
+        "English": "SSE",
+        "Localized": "ЮЮВ"
+      },
+      "Speed": {
+        "Unit": "km/h",
+        "UnitType": 7,
+        "Value": 14.8
+      }
+    },
+    "WindGust": {
+      "Speed": {
+        "Unit": "km/h",
+        "UnitType": 7,
+        "Value": 20.4
+      }
+    }
+  },
+  {
+    "AccuLumenBrightnessIndex": 0,
+    "Ceiling": {
+      "Unit": "m",
+      "UnitType": 5,
+      "Value": 9144
+    },
+    "CloudCover": 59,
+    "DateTime": "2025-05-23T23:00:00+10:00",
+    "DewPoint": {
+      "Unit": "C",
+      "UnitType": 17,
+      "Value": 7.6
+    },
+    "EpochDateTime": 1748005200,
+    "Evapotranspiration": {
+      "Unit": "mm",
+      "UnitType": 3,
+      "Value": 0
+    },
+    "HasPrecipitation": false,
+    "Ice": {
+      "Unit": "mm",
+      "UnitType": 3,
+      "Value": 0
+    },
+    "IceProbability": 0,
+    "IconPhrase": "Переменная облачность",
+    "IndoorRelativeHumidity": 45,
+    "IsDaylight": false,
+    "Link": "http://www.accuweather.com/ru/ru/vladivostok/294927/hourly-weather-forecast/294927?day=1\u0026hbhhour=23\u0026unit=c",
+    "MobileLink": "http://www.accuweather.com/ru/ru/vladivostok/294927/hourly-weather-forecast/294927?day=1\u0026hbhhour=23\u0026unit=c",
+    "PrecipitationProbability": 0,
+    "Rain": {
+      "Unit": "mm",
+      "UnitType": 3,
+      "Value": 0
+    },
+    "RainProbability": 0,
+    "RealFeelTemperature": {
+      "Phrase": "Зябко",
+      "Unit": "C",
+      "UnitType": 17,
+      "Value": 8.7
+    },
+    "RealFeelTemperatureShade": {
+      "Phrase": "Зябко",
+      "Unit": "C",
+      "UnitType": 17,
+      "Value": 8.7
+    },
+    "RelativeHumidity": 79,
+    "Snow": {
+      "Unit": "cm",
+      "UnitType": 4,
+      "Value": 0
+    },
+    "SnowProbability": 0,
+    "SolarIrradiance": {
+      "Unit": "W/m²",
+      "UnitType": 33,
+      "Value": 0
+    },
+    "Temperature": {
+      "Unit": "C",
+      "UnitType": 17,
+      "Value": 11.2
+    },
+    "ThunderstormProbability": 0,
+    "TotalLiquid": {
+      "Unit": "mm",
+      "UnitType": 3,
+      "Value": 0
+    },
+    "UVIndex": 0,
+    "UVIndexText": "Низк.",
+    "Visibility": {
+      "Unit": "km",
+      "UnitType": 6,
+      "Value": 16.1
+    },
+    "WeatherIcon": 36,
+    "WetBulbGlobeTemperature": {
+      "Unit": "C",
+      "UnitType": 17,
+      "Value": 11.3
+    },
+    "WetBulbTemperature": {
+      "Unit": "C",
+      "UnitType": 17,
+      "Value": 9.5
+    },
+    "Wind": {
+      "Direction": {
+        "Degrees": 158,
+        "English": "SSE",
+        "Localized": "ЮЮВ"
+      },
+      "Speed": {
+        "Unit": "km/h",
+        "UnitType": 7,
+        "Value": 14.8
+      }
+    },
+    "WindGust": {
+      "Speed": {
+        "Unit": "km/h",
+        "UnitType": 7,
+        "Value": 20.4
+      }
+    }
+  },
+  {
+    "AccuLumenBrightnessIndex": 0,
+    "Ceiling": {
+      "Unit": "m",
+      "UnitType": 5,
+      "Value": 9144
+    },
+    "CloudCover": 76,
+    "DateTime": "2025-05-24T00:00:00+10:00",
+    "DewPoint": {
+      "Unit": "C",
+      "UnitType": 17,
+      "Value": 7.6
+    },
+    "EpochDateTime": 1748008800,
+    "Evapotranspiration": {
+      "Unit": "mm",
+      "UnitType": 3,
+      "Value": 0
+    },
+    "HasPrecipitation": false,
+    "Ice": {
+      "Unit": "mm",
+      "UnitType": 3,
+      "Value": 0
+    },
+    "IceProbability": 0,
+    "IconPhrase": "Преимущественно облачно",
+    "IndoorRelativeHumidity": 44,
+    "IsDaylight": false,
+    "Link": "http://www.accuweather.com/ru/ru/vladivostok/294927/hourly-weather-forecast/294927?day=2\u0026hbhhour=0\u0026unit=c",
+    "MobileLink": "http://www.accuweather.com/ru/ru/vladivostok/294927/hourly-weather-forecast/294927?day=2\u0026hbhhour=0\u0026unit=c",
+    "PrecipitationProbability": 0,
+    "Rain": {
+      "Unit": "mm",
+      "UnitType": 3,
+      "Value": 0
+    },
+    "RainProbability": 0,
+    "RealFeelTemperature": {
+      "Phrase": "Зябко",
+      "Unit": "C",
+      "UnitType": 17,
+      "Value": 8.6
+    },
+    "RealFeelTemperatureShade": {
+      "Phrase": "Зябко",
+      "Unit": "C",
+      "UnitType": 17,
+      "Value": 8.6
+    },
+    "RelativeHumidity": 80,
+    "Snow": {
+      "Unit": "cm",
+      "UnitType": 4,
+      "Value": 0
+    },
+    "SnowProbability": 0,
+    "SolarIrradiance": {
+      "Unit": "W/m²",
+      "UnitType": 33,
+      "Value": 0
+    },
+    "Temperature": {
+      "Unit": "C",
+      "UnitType": 17,
+      "Value": 11
+    },
+    "ThunderstormProbability": 0,
+    "TotalLiquid": {
+      "Unit": "mm",
+      "UnitType": 3,
+      "Value": 0
+    },
+    "UVIndex": 0,
+    "UVIndexText": "Низк.",
+    "Visibility": {
+      "Unit": "km",
+      "UnitType": 6,
+      "Value": 16.1
+    },
+    "WeatherIcon": 38,
+    "WetBulbGlobeTemperature": {
+      "Unit": "C",
+      "UnitType": 17,
+      "Value": 10.9
+    },
+    "WetBulbTemperature": {
+      "Unit": "C",
+      "UnitType": 17,
+      "Value": 9.4
+    },
+    "Wind": {
+      "Direction": {
+        "Degrees": 151,
+        "English": "SSE",
+        "Localized": "ЮЮВ"
+      },
+      "Speed": {
+        "Unit": "km/h",
+        "UnitType": 7,
+        "Value": 13
+      }
+    },
+    "WindGust": {
+      "Speed": {
+        "Unit": "km/h",
+        "UnitType": 7,
+        "Value": 20.4
+      }
+    }
+  },
+  {
+    "AccuLumenBrightnessIndex": 0,
+    "Ceiling": {
+      "Unit": "m",
+      "UnitType": 5,
+      "Value": 9144
+    },
+    "CloudCover": 92,
+    "DateTime": "2025-05-24T01:00:00+10:00",
+    "DewPoint": {
+      "Unit": "C",
+      "UnitType": 17,
+      "Value": 7.5
+    },
+    "EpochDateTime": 1748012400,
+    "Evapotranspiration": {
+      "Unit": "mm",
+      "UnitType": 3,
+      "Value": 0
+    },
+    "HasPrecipitation": false,
+    "Ice": {
+      "Unit": "mm",
+      "UnitType": 3,
+      "Value": 0
+    },
+    "IceProbability": 0,
+    "IconPhrase": "Облачно",
+    "IndoorRelativeHumidity": 44,
+    "IsDaylight": false,
+    "Link": "http://www.accuweather.com/ru/ru/vladivostok/294927/hourly-weather-forecast/294927?day=2\u0026hbhhour=1\u0026unit=c",
+    "MobileLink": "http://www.accuweather.com/ru/ru/vladivostok/294927/hourly-weather-forecast/294927?day=2\u0026hbhhour=1\u0026unit=c",
+    "PrecipitationProbability": 0,
+    "Rain": {
+      "Unit": "mm",
+      "UnitType": 3,
+      "Value": 0
+    },
+    "RainProbability": 0,
+    "RealFeelTemperature": {
+      "Phrase": "Зябко",
+      "Unit": "C",
+      "UnitType": 17,
+      "Value": 8.6
+    },
+    "RealFeelTemperatureShade": {
+      "Phrase": "Зябко",
+      "Unit": "C",
+      "UnitType": 17,
+      "Value": 8.6
+    },
+    "RelativeHumidity": 80,
+    "Snow": {
+      "Unit": "cm",
+      "UnitType": 4,
+      "Value": 0
+    },
+    "SnowProbability": 0,
+    "SolarIrradiance": {
+      "Unit": "W/m²",
+      "UnitType": 33,
+      "Value": 0
+    },
+    "Temperature": {
+      "Unit": "C",
+      "UnitType": 17,
+      "Value": 10.8
+    },
+    "ThunderstormProbability": 0,
+    "TotalLiquid": {
+      "Unit": "mm",
+      "UnitType": 3,
+      "Value": 0
+    },
+    "UVIndex": 0,
+    "UVIndexText": "Низк.",
+    "Visibility": {
+      "Unit": "km",
+      "UnitType": 6,
+      "Value": 16.1
+    },
+    "WeatherIcon": 7,
+    "WetBulbGlobeTemperature": {
+      "Unit": "C",
+      "UnitType": 17,
+      "Value": 10.2
+    },
+    "WetBulbTemperature": {
+      "Unit": "C",
+      "UnitType": 17,
+      "Value": 9.3
+    },
+    "Wind": {
+      "Direction": {
+        "Degrees": 142,
+        "English": "SE",
+        "Localized": "ЮВ"
+      },
+      "Speed": {
+        "Unit": "km/h",
+        "UnitType": 7,
+        "Value": 13
+      }
+    },
+    "WindGust": {
+      "Speed": {
+        "Unit": "km/h",
+        "UnitType": 7,
+        "Value": 20.4
+      }
+    }
+  },
+  {
+    "AccuLumenBrightnessIndex": 0,
+    "Ceiling": {
+      "Unit": "m",
+      "UnitType": 5,
+      "Value": 9144
+    },
+    "CloudCover": 80,
+    "DateTime": "2025-05-24T02:00:00+10:00",
+    "DewPoint": {
+      "Unit": "C",
+      "UnitType": 17,
+      "Value": 7.5
+    },
+    "EpochDateTime": 1748016000,
+    "Evapotranspiration": {
+      "Unit": "mm",
+      "UnitType": 3,
+      "Value": 0
+    },
+    "HasPrecipitation": false,
+    "Ice": {
+      "Unit": "mm",
+      "UnitType": 3,
+      "Value": 0
+    },
+    "IceProbability": 0,
+    "IconPhrase": "Преимущественно облачно",
+    "IndoorRelativeHumidity": 44,
+    "IsDaylight": false,
+    "Link": "http://www.accuweather.com/ru/ru/vladivostok/294927/hourly-weather-forecast/294927?day=2\u0026hbhhour=2\u0026unit=c",
+    "MobileLink": "http://www.accuweather.com/ru/ru/vladivostok/294927/hourly-weather-forecast/294927?day=2\u0026hbhhour=2\u0026unit=c",
+    "PrecipitationProbability": 0,
+    "Rain": {
+      "Unit": "mm",
+      "UnitType": 3,
+      "Value": 0
+    },
+    "RainProbability": 0,
+    "RealFeelTemperature": {
+      "Phrase": "Зябко",
+      "Unit": "C",
+      "UnitType": 17,
+      "Value": 8.1
+    },
+    "RealFeelTemperatureShade": {
+      "Phrase": "Зябко",
+      "Unit": "C",
+      "UnitType": 17,
+      "Value": 8.1
+    },
+    "RelativeHumidity": 83,
+    "Snow": {
+      "Unit": "cm",
+      "UnitType": 4,
+      "Value": 0
+    },
+    "SnowProbability": 0,
+    "SolarIrradiance": {
+      "Unit": "W/m²",
+      "UnitType": 33,
+      "Value": 0
+    },
+    "Temperature": {
+      "Unit": "C",
+      "UnitType": 17,
+      "Value": 10.3
+    },
+    "ThunderstormProbability": 0,
+    "TotalLiquid": {
+      "Unit": "mm",
+      "UnitType": 3,
+      "Value": 0
+    },
+    "UVIndex": 0,
+    "UVIndexText": "Низк.",
+    "Visibility": {
+      "Unit": "km",
+      "UnitType": 6,
+      "Value": 16.1
+    },
+    "WeatherIcon": 38,
+    "WetBulbGlobeTemperature": {
+      "Unit": "C",
+      "UnitType": 17,
+      "Value": 10.4
+    },
+    "WetBulbTemperature": {
+      "Unit": "C",
+      "UnitType": 17,
+      "Value": 9
+    },
+    "Wind": {
+      "Direction": {
+        "Degrees": 142,
+        "English": "SE",
+        "Localized": "ЮВ"
+      },
+      "Speed": {
+        "Unit": "km/h",
+        "UnitType": 7,
+        "Value": 13
+      }
+    },
+    "WindGust": {
+      "Speed": {
+        "Unit": "km/h",
+        "UnitType": 7,
+        "Value": 20.4
+      }
+    }
+  },
+  {
+    "AccuLumenBrightnessIndex": 0,
+    "Ceiling": {
+      "Unit": "m",
+      "UnitType": 5,
+      "Value": 9144
+    },
+    "CloudCover": 68,
+    "DateTime": "2025-05-24T03:00:00+10:00",
+    "DewPoint": {
+      "Unit": "C",
+      "UnitType": 17,
+      "Value": 7.4
+    },
+    "EpochDateTime": 1748019600,
+    "Evapotranspiration": {
+      "Unit": "mm",
+      "UnitType": 3,
+      "Value": 0
+    },
+    "HasPrecipitation": false,
+    "Ice": {
+      "Unit": "mm",
+      "UnitType": 3,
+      "Value": 0
+    },
+    "IceProbability": 0,
+    "IconPhrase": "Переменная облачность",
+    "IndoorRelativeHumidity": 44,
+    "IsDaylight": false,
+    "Link": "http://www.accuweather.com/ru/ru/vladivostok/294927/hourly-weather-forecast/294927?day=2\u0026hbhhour=3\u0026unit=c",
+    "MobileLink": "http://www.accuweather.com/ru/ru/vladivostok/294927/hourly-weather-forecast/294927?day=2\u0026hbhhour=3\u0026unit=c",
+    "PrecipitationProbability": 0,
+    "Rain": {
+      "Unit": "mm",
+      "UnitType": 3,
+      "Value": 0
+    },
+    "RainProbability": 0,
+    "RealFeelTemperature": {
+      "Phrase": "Зябко",
+      "Unit": "C",
+      "UnitType": 17,
+      "Value": 7.5
+    },
+    "RealFeelTemperatureShade": {
+      "Phrase": "Зябко",
+      "Unit": "C",
+      "UnitType": 17,
+      "Value": 7.5
+    },
+    "RelativeHumidity": 85,
+    "Snow": {
+      "Unit": "cm",
+      "UnitType": 4,
+      "Value": 0
+    },
+    "SnowProbability": 0,
+    "SolarIrradiance": {
+      "Unit": "W/m²",
+      "UnitType": 33,
+      "Value": 0
+    },
+    "Temperature": {
+      "Unit": "C",
+      "UnitType": 17,
+      "Value": 9.7
+    },
+    "ThunderstormProbability": 0,
+    "TotalLiquid": {
+      "Unit": "mm",
+      "UnitType": 3,
+      "Value": 0
+    },
+    "UVIndex": 0,
+    "UVIndexText": "Низк.",
+    "Visibility": {
+      "Unit": "km",
+      "UnitType": 6,
+      "Value": 16.1
+    },
+    "WeatherIcon": 36,
+    "WetBulbGlobeTemperature": {
+      "Unit": "C",
+      "UnitType": 17,
+      "Value": 9.7
+    },
+    "WetBulbTemperature": {
+      "Unit": "C",
+      "UnitType": 17,
+      "Value": 8.6
+    },
+    "Wind": {
+      "Direction": {
+        "Degrees": 147,
+        "English": "SSE",
+        "Localized": "ЮЮВ"
+      },
+      "Speed": {
+        "Unit": "km/h",
+        "UnitType": 7,
+        "Value": 13
+      }
+    },
+    "WindGust": {
+      "Speed": {
+        "Unit": "km/h",
+        "UnitType": 7,
+        "Value": 20.4
+      }
+    }
+  },
+  {
+    "AccuLumenBrightnessIndex": 0,
+    "Ceiling": {
+      "Unit": "m",
+      "UnitType": 5,
+      "Value": 9144
+    },
+    "CloudCover": 55,
+    "DateTime": "2025-05-24T04:00:00+10:00",
+    "DewPoint": {
+      "Unit": "C",
+      "UnitType": 17,
+      "Value": 7.3
+    },
+    "EpochDateTime": 1748023200,
+    "Evapotranspiration": {
+      "Unit": "mm",
+      "UnitType": 3,
+      "Value": 0
+    },
+    "HasPrecipitation": false,
+    "Ice": {
+      "Unit": "mm",
+      "UnitType": 3,
+      "Value": 0
+    },
+    "IceProbability": 0,
+    "IconPhrase": "Переменная облачность",
+    "IndoorRelativeHumidity": 44,
+    "IsDaylight": false,
+    "Link": "http://www.accuweather.com/ru/ru/vladivostok/294927/hourly-weather-forecast/294927?day=2\u0026hbhhour=4\u0026unit=c",
+    "MobileLink": "http://www.accuweather.com/ru/ru/vladivostok/294927/hourly-weather-forecast/294927?day=2\u0026hbhhour=4\u0026unit=c",
+    "PrecipitationProbability": 0,
+    "Rain": {
+      "Unit": "mm",
+      "UnitType": 3,
+      "Value": 0
+    },
+    "RainProbability": 0,
+    "RealFeelTemperature": {
+      "Phrase": "Зябко",
+      "Unit": "C",
+      "UnitType": 17,
+      "Value": 7
+    },
+    "RealFeelTemperatureShade": {
+      "Phrase": "Зябко",
+      "Unit": "C",
+      "UnitType": 17,
+      "Value": 7
+    },
+    "RelativeHumidity": 88,
+    "Snow": {
+      "Unit": "cm",
+      "UnitType": 4,
+      "Value": 0
+    },
+    "SnowProbability": 0,
+    "SolarIrradiance": {
+      "Unit": "W/m²",
+      "UnitType": 33,
+      "Value": 0
+    },
+    "Temperature": {
+      "Unit": "C",
+      "UnitType": 17,
+      "Value": 9.2
+    },
+    "ThunderstormProbability": 0,
+    "TotalLiquid": {
+      "Unit": "mm",
+      "UnitType": 3,
+      "Value": 0
+    },
+    "UVIndex": 0,
+    "UVIndexText": "Низк.",
+    "Visibility": {
+      "Unit": "km",
+      "UnitType": 6,
+      "Value": 16.1
+    },
+    "WeatherIcon": 36,
+    "WetBulbGlobeTemperature": {
+      "Unit": "C",
+      "UnitType": 17,
+      "Value": 9.2
+    },
+    "WetBulbTemperature": {
+      "Unit": "C",
+      "UnitType": 17,
+      "Value": 8.3
+    },
+    "Wind": {
+      "Direction": {
+        "Degrees": 152,
+        "English": "SSE",
+        "Localized": "ЮЮВ"
+      },
+      "Speed": {
+        "Unit": "km/h",
+        "UnitType": 7,
+        "Value": 13
+      }
+    },
+    "WindGust": {
+      "Speed": {
+        "Unit": "km/h",
+        "UnitType": 7,
+        "Value": 20.4
+      }
+    }
+  },
+  {
+    "AccuLumenBrightnessIndex": 1,
+    "Ceiling": {
+      "Unit": "m",
+      "UnitType": 5,
+      "Value": 5578
+    },
+    "CloudCover": 70,
+    "DateTime": "2025-05-24T05:00:00+10:00",
+    "DewPoint": {
+      "Unit": "C",
+      "UnitType": 17,
+      "Value": 7.3
+    },
+    "EpochDateTime": 1748026800,
+    "Evapotranspiration": {
+      "Unit": "mm",
+      "UnitType": 3,
+      "Value": 0
+    },
+    "HasPrecipitation": false,
+    "Ice": {
+      "Unit": "mm",
+      "UnitType": 3,
+      "Value": 0
+    },
+    "IceProbability": 0,
+    "IconPhrase": "Переменная облачность",
+    "IndoorRelativeHumidity": 44,
+    "IsDaylight": false,
+    "Link": "http://www.accuweather.com/ru/ru/vladivostok/294927/hourly-weather-forecast/294927?day=2\u0026hbhhour=5\u0026unit=c",
+    "MobileLink": "http://www.accuweather.com/ru/ru/vladivostok/294927/hourly-weather-forecast/294927?day=2\u0026hbhhour=5\u0026unit=c",
+    "PrecipitationProbability": 0,
+    "Rain": {
+      "Unit": "mm",
+      "UnitType": 3,
+      "Value": 0
+    },
+    "RainProbability": 0,
+    "RealFeelTemperature": {
+      "Phrase": "Зябко",
+      "Unit": "C",
+      "UnitType": 17,
+      "Value": 6.9
+    },
+    "RealFeelTemperatureShade": {
+      "Phrase": "Зябко",
+      "Unit": "C",
+      "UnitType": 17,
+      "Value": 6.9
+    },
+    "RelativeHumidity": 89,
+    "Snow": {
+      "Unit": "cm",
+      "UnitType": 4,
+      "Value": 0
+    },
+    "SnowProbability": 0,
+    "SolarIrradiance": {
+      "Unit": "W/m²",
+      "UnitType": 33,
+      "Value": 50.7
+    },
+    "Temperature": {
+      "Unit": "C",
+      "UnitType": 17,
+      "Value": 9
+    },
+    "ThunderstormProbability": 0,
+    "TotalLiquid": {
+      "Unit": "mm",
+      "UnitType": 3,
+      "Value": 0
+    },
+    "UVIndex": 0,
+    "UVIndexText": "Низк.",
+    "Visibility": {
+      "Unit": "km",
+      "UnitType": 6,
+      "Value": 16.1
+    },
+    "WeatherIcon": 36,
+    "WetBulbGlobeTemperature": {
+      "Unit": "C",
+      "UnitType": 17,
+      "Value": 9
+    },
+    "WetBulbTemperature": {
+      "Unit": "C",
+      "UnitType": 17,
+      "Value": 8.2
+    },
+    "Wind": {
+      "Direction": {
+        "Degrees": 157,
+        "English": "SSE",
+        "Localized": "ЮЮВ"
+      },
+      "Speed": {
+        "Unit": "km/h",
+        "UnitType": 7,
+        "Value": 13
+      }
+    },
+    "WindGust": {
+      "Speed": {
+        "Unit": "km/h",
+        "UnitType": 7,
+        "Value": 20.4
+      }
+    }
+  },
+  {
+    "AccuLumenBrightnessIndex": 3,
+    "Ceiling": {
+      "Unit": "m",
+      "UnitType": 5,
+      "Value": 5578
+    },
+    "CloudCover": 85,
+    "DateTime": "2025-05-24T06:00:00+10:00",
+    "DewPoint": {
+      "Unit": "C",
+      "UnitType": 17,
+      "Value": 7.4
+    },
+    "EpochDateTime": 1748030400,
+    "Evapotranspiration": {
+      "Unit": "mm",
+      "UnitType": 3,
+      "Value": 0
+    },
+    "HasPrecipitation": false,
+    "Ice": {
+      "Unit": "mm",
+      "UnitType": 3,
+      "Value": 0
+    },
+    "IceProbability": 0,
+    "IconPhrase": "Преимущественно облачно",
+    "IndoorRelativeHumidity": 44,
+    "IsDaylight": true,
+    "Link": "http://www.accuweather.com/ru/ru/vladivostok/294927/hourly-weather-forecast/294927?day=2\u0026hbhhour=6\u0026unit=c",
+    "MobileLink": "http://www.accuweather.com/ru/ru/vladivostok/294927/hourly-weather-forecast/294927?day=2\u0026hbhhour=6\u0026unit=c",
+    "PrecipitationProbability": 0,
+    "Rain": {
+      "Unit": "mm",
+      "UnitType": 3,
+      "Value": 0
+    },
+    "RainProbability": 0,
+    "RealFeelTemperature": {
+      "Phrase": "Зябко",
+      "Unit": "C",
+      "UnitType": 17,
+      "Value": 6.8
+    },
+    "RealFeelTemperatureShade": {
+      "Phrase": "Зябко",
+      "Unit": "C",
+      "UnitType": 17,
+      "Value": 6.8
+    },
+    "RelativeHumidity": 93,
+    "Snow": {
+      "Unit": "cm",
+      "UnitType": 4,
+      "Value": 0
+    },
+    "SnowProbability": 0,
+    "SolarIrradiance": {
+      "Unit": "W/m²",
+      "UnitType": 33,
+      "Value": 119.6
+    },
+    "Temperature": {
+      "Unit": "C",
+      "UnitType": 17,
+      "Value": 8.5
+    },
+    "ThunderstormProbability": 0,
+    "TotalLiquid": {
+      "Unit": "mm",
+      "UnitType": 3,
+      "Value": 0
+    },
+    "UVIndex": 1,
+    "UVIndexText": "Низк.",
+    "Visibility": {
+      "Unit": "km",
+      "UnitType": 6,
+      "Value": 11.3
+    },
+    "WeatherIcon": 6,
+    "WetBulbGlobeTemperature": {
+      "Unit": "C",
+      "UnitType": 17,
+      "Value": 8.5
+    },
+    "WetBulbTemperature": {
+      "Unit": "C",
+      "UnitType": 17,
+      "Value": 8
+    },
+    "Wind": {
+      "Direction": {
+        "Degrees": 160,
+        "English": "SSE",
+        "Localized": "ЮЮВ"
+      },
+      "Speed": {
+        "Unit": "km/h",
+        "UnitType": 7,
+        "Value": 13
+      }
+    },
+    "WindGust": {
+      "Speed": {
+        "Unit": "km/h",
+        "UnitType": 7,
+        "Value": 20.4
+      }
+    }
+  },
+  {
+    "AccuLumenBrightnessIndex": 1,
+    "Ceiling": {
+      "Unit": "m",
+      "UnitType": 5,
+      "Value": 5578
+    },
+    "CloudCover": 100,
+    "DateTime": "2025-05-24T07:00:00+10:00",
+    "DewPoint": {
+      "Unit": "C",
+      "UnitType": 17,
+      "Value": 7.6
+    },
+    "EpochDateTime": 1748034000,
+    "Evapotranspiration": {
+      "Unit": "mm",
+      "UnitType": 3,
+      "Value": 0
+    },
+    "HasPrecipitation": false,
+    "Ice": {
+      "Unit": "mm",
+      "UnitType": 3,
+      "Value": 0
+    },
+    "IceProbability": 0,
+    "IconPhrase": "Облачно",
+    "IndoorRelativeHumidity": 44,
+    "IsDaylight": true,
+    "Link": "http://www.accuweather.com/ru/ru/vladivostok/294927/hourly-weather-forecast/294927?day=2\u0026hbhhour=7\u0026unit=c",
+    "MobileLink": "http://www.accuweather.com/ru/ru/vladivostok/294927/hourly-weather-forecast/294927?day=2\u0026hbhhour=7\u0026unit=c",
+    "PrecipitationProbability": 1,
+    "Rain": {
+      "Unit": "mm",
+      "UnitType": 3,
+      "Value": 0
+    },
+    "RainProbability": 1,
+    "RealFeelTemperature": {
+      "Phrase": "Зябко",
+      "Unit": "C",
+      "UnitType": 17,
+      "Value": 7.4
+    },
+    "RealFeelTemperatureShade": {
+      "Phrase": "Зябко",
+      "Unit": "C",
+      "UnitType": 17,
+      "Value": 7.4
+    },
+    "RelativeHumidity": 90,
+    "Snow": {
+      "Unit": "cm",
+      "UnitType": 4,
+      "Value": 0
+    },
+    "SnowProbability": 0,
+    "SolarIrradiance": {
+      "Unit": "W/m²",
+      "UnitType": 33,
+      "Value": 22.8
+    },
+    "Temperature": {
+      "Unit": "C",
+      "UnitType": 17,
+      "Value": 9
+    },
+    "ThunderstormProbability": 0,
+    "TotalLiquid": {
+      "Unit": "mm",
+      "UnitType": 3,
+      "Value": 0
+    },
+    "UVIndex": 1,
+    "UVIndexText": "Низк.",
+    "Visibility": {
+      "Unit": "km",
+      "UnitType": 6,
+      "Value": 11.3
+    },
+    "WeatherIcon": 7,
+    "WetBulbGlobeTemperature": {
+      "Unit": "C",
+      "UnitType": 17,
+      "Value": 9
+    },
+    "WetBulbTemperature": {
+      "Unit": "C",
+      "UnitType": 17,
+      "Value": 8.4
+    },
+    "Wind": {
+      "Direction": {
+        "Degrees": 163,
+        "English": "SSE",
+        "Localized": "ЮЮВ"
+      },
+      "Speed": {
+        "Unit": "km/h",
+        "UnitType": 7,
+        "Value": 13
+      }
+    },
+    "WindGust": {
+      "Speed": {
+        "Unit": "km/h",
+        "UnitType": 7,
+        "Value": 20.4
+      }
+    }
+  },
+  {
+    "AccuLumenBrightnessIndex": 6,
+    "Ceiling": {
+      "Unit": "m",
+      "UnitType": 5,
+      "Value": 5578
+    },
+    "CloudCover": 71,
+    "DateTime": "2025-05-24T08:00:00+10:00",
+    "DewPoint": {
+      "Unit": "C",
+      "UnitType": 17,
+      "Value": 7.6
+    },
+    "EpochDateTime": 1748037600,
+    "Evapotranspiration": {
+      "Unit": "mm",
+      "UnitType": 3,
+      "Value": 0
+    },
+    "HasPrecipitation": false,
+    "Ice": {
+      "Unit": "mm",
+      "UnitType": 3,
+      "Value": 0
+    },
+    "IceProbability": 0,
+    "IconPhrase": "Переменная облачность",
+    "IndoorRelativeHumidity": 44,
+    "IsDaylight": true,
+    "Link": "http://www.accuweather.com/ru/ru/vladivostok/294927/hourly-weather-forecast/294927?day=2\u0026hbhhour=8\u0026unit=c",
+    "MobileLink": "http://www.accuweather.com/ru/ru/vladivostok/294927/hourly-weather-forecast/294927?day=2\u0026hbhhour=8\u0026unit=c",
+    "PrecipitationProbability": 1,
+    "Rain": {
+      "Unit": "mm",
+      "UnitType": 3,
+      "Value": 0
+    },
+    "RainProbability": 1,
+    "RealFeelTemperature": {
+      "Phrase": "Зябко",
+      "Unit": "C",
+      "UnitType": 17,
+      "Value": 9
+    },
+    "RealFeelTemperatureShade": {
+      "Phrase": "Зябко",
+      "Unit": "C",
+      "UnitType": 17,
+      "Value": 6.9
+    },
+    "RelativeHumidity": 88,
+    "Snow": {
+      "Unit": "cm",
+      "UnitType": 4,
+      "Value": 0
+    },
+    "SnowProbability": 0,
+    "SolarIrradiance": {
+      "Unit": "W/m²",
+      "UnitType": 33,
+      "Value": 448.1
+    },
+    "Temperature": {
+      "Unit": "C",
+      "UnitType": 17,
+      "Value": 9.5
+    },
+    "ThunderstormProbability": 0,
+    "TotalLiquid": {
+      "Unit": "mm",
+      "UnitType": 3,
+      "Value": 0
+    },
+    "UVIndex": 2,
+    "UVIndexText": "Низк.",
+    "Visibility": {
+      "Unit": "km",
+      "UnitType": 6,
+      "Value": 11.3
+    },
+    "WeatherIcon": 4,
+    "WetBulbGlobeTemperature": {
+      "Unit": "C",
+      "UnitType": 17,
+      "Value": 9.5
+    },
+    "WetBulbTemperature": {
+      "Unit": "C",
+      "UnitType": 17,
+      "Value": 8.6
+    },
+    "Wind": {
+      "Direction": {
+        "Degrees": 169,
+        "English": "S",
+        "Localized": "Ю"
+      },
+      "Speed": {
+        "Unit": "km/h",
+        "UnitType": 7,
+        "Value": 13
+      }
+    },
+    "WindGust": {
+      "Speed": {
+        "Unit": "km/h",
+        "UnitType": 7,
+        "Value": 22.2
+      }
+    }
+  }
+]

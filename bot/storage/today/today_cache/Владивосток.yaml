@@ -1,0 +1,29 @@
+last_updated: 2025-05-27T21:16:02.54802644+03:00
+data:
+    city: Владивосток
+    morning:
+        temperature: 12.275
+        feelslike: 11.633333333333333
+        humidity: 93
+        windspeed: 2.2694444444444444
+        precipitation: пасмурно
+    day:
+        temperature: 13.648333333333333
+        feelslike: 13.313333333333333
+        humidity: 87
+        windspeed: 2.9824074074074076
+        precipitation: пасмурно
+    evening:
+        temperature: 12.89
+        feelslike: 11.6775
+        humidity: 90
+        windspeed: 2.3027777777777776
+        precipitation: пасмурно
+    night:
+        temperature: 12.68
+        feelslike: 11.4475
+        humidity: 88
+        windspeed: 2.4180555555555556
+        precipitation: пасмурно
+    sunrise: "05:36"
+    sunset: "20:43"

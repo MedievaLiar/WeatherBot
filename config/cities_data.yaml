@@ -1,0 +1,55 @@
+Москва:
+  lat: 55.752220
+  lon: 37.615559
+  slug_yandex: "moscow"
+  slug_gismeteo: "moscow"
+  gismeteo_number: "4368"
+  timezone: "Europe/Moscow"
+
+Санкт-Петербург:
+  lat: 59.931718
+  lon: 30.338933
+  slug_yandex: "saint-petersburg"
+  slug_gismeteo: "sankt-peterburg"
+  gismeteo_number: "4079"
+  timezone: "Europe/Moscow"
+
+Владивосток:
+  lat: 43.113213
+  lon: 131.916257
+  slug_yandex: "vladivostok"
+  slug_gismeteo: "vladivostok"
+  gismeteo_number: "4877"
+  timezone: "Asia/Vladivostok"
+
+Большой Камень:
+  lat: 43.111725
+  lon: 132.350345
+  slug_yandex: "bolshoy-kamen"
+  slug_gismeteo: "bolshoy-kamen"
+  gismeteo_number: "12714"
+  timezone: "Asia/Vladivostok"
+
+Уссурийск:
+  lat: 43.797247
+  lon: 131.952122
+  slug_yandex: "ussuriysk"
+  slug_gismeteo: "ussurysk"
+  gismeteo_number: "11825"
+  timezone: "Asia/Vladivostok"
+
+Екатеринбург:
+  lat: 56.838926
+  lon: 60.605702
+  slug_yandex: "yekaterinburg"
+  slug_gismeteo: "yekaterinburg"
+  gismeteo_number: "4517"
+  timezone: "Asia/Yekaterinburg"
+
+Хабаровск:
+  lat: 48.464799
+  lon: 135.059881
+  slug_yandex: "khabarovsk"
+  slug_gismeteo: "khabarovsk"
+  gismeteo_number: "4862"
+  timezone: "Asia/Vladivostok"

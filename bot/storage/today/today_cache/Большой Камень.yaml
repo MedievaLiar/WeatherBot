@@ -1,0 +1,29 @@
+last_updated: 2025-05-29T07:04:16.089061442+03:00
+data:
+    city: Большой Камень
+    morning:
+        temperature: 15.6325
+        feelslike: 14.370000000000001
+        humidity: 68
+        windspeed: 2.83125
+        precipitation: ясно
+    day:
+        temperature: 16.831666666666667
+        feelslike: 16.39
+        humidity: 63
+        windspeed: 3.329629629629629
+        precipitation: ясно
+    evening:
+        temperature: 15.343333333333334
+        feelslike: 13.665
+        humidity: 69
+        windspeed: 3.0560185185185187
+        precipitation: малооблачно
+    night:
+        temperature: 14.755
+        feelslike: 13.51333333333333
+        humidity: 75
+        windspeed: 2.4388888888888887
+        precipitation: ясно
+    sunrise: "05:33"
+    sunset: "20:42"
