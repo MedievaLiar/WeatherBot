@@ -221,7 +221,7 @@ func sendDailyForecasts() {
     hour := time.Now().Hour()
     for chatID, prefs := range users.GetAllUserPrefs() {
         if prefs.WantDailyForecast && prefs.ForecastMskHour == hour {
-            sendForecast(chatID, prefs.ForecastCity)
+            go sendForecast(chatID, prefs.ForecastCity)
         }
     }
 }
