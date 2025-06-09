@@ -1,29 +1,29 @@
-last_updated: 2025-05-28T20:37:32.255447173+03:00
+last_updated: 2025-05-29T18:44:58.397066029+03:00
 data:
     city: Екатеринбург
     morning:
-        temperature: 22
-        feelslike: 19
+        temperature: 23
+        feelslike: 20
         humidity: 36
-        windspeed: 5
-        precipitation: ясно
+        windspeed: 4
+        precipitation: гроза
     day:
-        temperature: 27
-        feelslike: 23
+        temperature: 28
+        feelslike: 24
         humidity: 18
-        windspeed: 6
-        precipitation: ясно
+        windspeed: 5
+        precipitation: гроза
     evening:
         temperature: 27
         feelslike: 23
         humidity: 22
         windspeed: 4
-        precipitation: ясно
+        precipitation: гроза
     night:
-        temperature: 17
-        feelslike: 14
-        humidity: 46
+        temperature: 19
+        feelslike: 17
+        humidity: 47
         windspeed: 2
-        precipitation: ясно
-    sunrise: "04:14"
-    sunset: "21:35"
+        precipitation: облачно с прояснениями
+    sunrise: "04:12"
+    sunset: "21:37"

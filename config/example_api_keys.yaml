@@ -1,0 +1,6 @@
+# Пример конфигурационного файла
+# Замените значения на свои реальные ключи
+
+accuweather: "ВАШ_ACCUWEATHER_API_KEY"
+openweather: "ВАШ_OPENWEATHERMAP_API_KEY"
+telegram: "ВАШ_TELEGRAM_BOT_TOKEN"

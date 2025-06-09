@@ -1,2 +1,4 @@
 config/api_keys.yaml
 config/accu_keys.yaml
+bot/storage/users
+adhoc/notes.txt

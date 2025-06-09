@@ -1,29 +1,29 @@
-last_updated: 2025-05-29T07:13:22.271707833+03:00
+last_updated: 2025-06-08T19:01:02.751651447+03:00
 data:
     city: Санкт-Петербург
     morning:
-        temperature: 18.73722222222222
-        feelslike: 17.93111111111111
-        humidity: 77
-        windspeed: 3.5641975308641975
-        precipitation: небольшой дождь
+        temperature: 14
+        feelslike: 12
+        humidity: 82
+        windspeed: 4
+        precipitation: дождь
     day:
-        temperature: 24.099999999999998
-        feelslike: 23.526666666666667
-        humidity: 61
-        windspeed: 3.739814814814815
-        precipitation: пасмурно
+        temperature: 16
+        feelslike: 13
+        humidity: 79
+        windspeed: 6
+        precipitation: дождь
     evening:
-        temperature: 20.408333333333335
-        feelslike: 19.463333333333335
-        humidity: 76
-        windspeed: 3.248148148148148
-        precipitation: небольшой дождь
+        temperature: 16.320000000000004
+        feelslike: 14.623333333333333
+        humidity: 64
+        windspeed: 2.7236111111111114
+        precipitation: облачно с прояснениями
     night:
-        temperature: 16.509999999999998
-        feelslike: 16.502499999999998
-        humidity: 86
-        windspeed: 1.9201388888888888
-        precipitation: небольшой дождь
-    sunrise: "03:49"
-    sunset: "22:02"
+        temperature: 13.315555555555555
+        feelslike: 12.548333333333332
+        humidity: 77
+        windspeed: 1.4694444444444443
+        precipitation: пасмурно
+    sunrise: "03:36"
+    sunset: "22:19"

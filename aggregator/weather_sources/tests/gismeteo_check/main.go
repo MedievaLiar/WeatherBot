@@ -15,5 +15,6 @@ func main() {
 		fmt.Println("error", err)
 		return
 	}
+	fmt.Println("Город:", city)
 	fmt.Println("Погода сейчас:", now)
 }
