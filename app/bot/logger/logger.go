@@ -15,7 +15,7 @@ var (
 	logger  *log.Logger
 )
 
-// Init инициализирует систему логирования
+// Инициализирует систему логирования
 func Init() error {
 	logsDir := "bot/logger/logs"
 	if err := os.MkdirAll(logsDir, 0755); err != nil {
@@ -37,7 +37,7 @@ func Init() error {
 	return nil
 }
 
-// LogUserAdded логирует добавление пользователя
+// Логирует добавление пользователя
 func LogUserAdded(user models.UserData) {
 	message := fmt.Sprintf("ДОБАВЛЕН ПОЛЬЗОВАТЕЛЬ: ID=%d, Username=@%s, CurrentCity=%s, ForecastCity=%s, WantDaily=%t",
 		user.ID, user.Username, user.CurrentCity, user.ForecastCity, user.WantDaily)
@@ -46,7 +46,7 @@ func LogUserAdded(user models.UserData) {
 	fmt.Println(message) // Также выводим в консоль
 }
 
-// LogUserUpdated логирует обновление пользователя
+// Логирует обновление пользователя
 func LogUserUpdated(user models.UserData) {
 	message := fmt.Sprintf("ОБНОВЛЕН ПОЛЬЗОВАТЕЛЬ: ID=%d, Username=@%s, CurrentCity=%s, ForecastCity=%s, WantDaily=%t",
 		user.ID, user.Username, user.CurrentCity, user.ForecastCity, user.WantDaily)

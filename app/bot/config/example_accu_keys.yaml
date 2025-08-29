@@ -1,5 +1,5 @@
 # Локальные ключи AccuWeather для городов
-# Эти ключи генерируются через скрипт fetch.go в папке .adhoc
+# Эти ключи генерируются через скрипт fetch.go в папке app/bot/storage/aggregator/weather_sources/utils/adhoc
 # Формат:
 # city: "LocationKey" (уникальный для каждого города)
 

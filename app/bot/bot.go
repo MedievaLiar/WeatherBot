@@ -19,7 +19,7 @@ import (
 
 var (
 	bot        *tgbotapi.BotAPI
-	userStates = make(map[int64]*models.UserState) // Мапа состояний
+	userStates = make(map[int64]*models.UserState) // собираем состояние пользователя
 )
 
 var mainKeyboard = tgbotapi.NewReplyKeyboard(
@@ -37,6 +37,7 @@ var mainKeyboard = tgbotapi.NewReplyKeyboard(
 )
 
 func Start() error {
+	// запуск логирования
 	if err := logger.Init(); err != nil {
 		log.Printf("Ошибка инициализации логирования: %v", err)
 	}
@@ -58,6 +59,7 @@ func Start() error {
 	if err := storage.Init(); err != nil {
 		return fmt.Errorf("ошибка инициализации БД: %v", err)
 	}
+	defer storage.CloseConnection()
 
 	totalUsers, usersWithDaily, err := storage.GetUserStats()
 	if err != nil {
@@ -113,19 +115,8 @@ func handleMessage(msg *tgbotapi.Message) {
 
 func handleUserInput(chatID int64, state *models.UserState, text string, username string) {
 	switch state.ExpectingInput {
-	case "forecast_city":
-		// ждем от пользователя город для рассылки
-		if _, exists := config.CityData[text]; !exists {
-			send(chatID, messages.SelectCity, nil)
-			askForCity(chatID, "forecast_city")
-			return
-		}
-
-		state.TempUserData.ForecastCity = text
-		state.ExpectingInput = "forecast_local_hour"
-		send(chatID, messages.EnterTime, nil)
-
 	case "forecast_local_hour":
+		// ждем установку времени
 		localHour, err := strconv.Atoi(text)
 		if err != nil || localHour < 0 || localHour > 23 {
 			send(chatID, messages.InvalidTime, nil)
@@ -136,10 +127,10 @@ func handleUserInput(chatID int64, state *models.UserState, text string, usernam
 		state.TempUserData.ForecastMskHour = mskHour
 		state.TempUserData.WantDaily = true
 
-		// сохраряем в бд
 		state.TempUserData.ID = chatID
 		state.TempUserData.Username = username
 
+		// сохраняем в БД
 		err = storage.SaveUser(&state.TempUserData)
 		if err != nil {
 			log.Printf("Ошибка сохранения пользователя %d: %v", chatID, err)
@@ -148,6 +139,7 @@ func handleUserInput(chatID int64, state *models.UserState, text string, usernam
 			msg := fmt.Sprintf(messages.ForecastConfirmed, state.TempUserData.ForecastCity, localHour)
 			send(chatID, msg, mainKeyboard)
 		}
+		// удаляем временного пользователя
 		delete(userStates, chatID)
 
 	default:
@@ -161,9 +153,7 @@ func handleCallback(callback *tgbotapi.CallbackQuery) {
 
 	bot.Send(tgbotapi.NewCallback(callback.ID, ""))
 
-	// Если есть состояние - обрабатываем ввод города через кнопки
 	if city, found := strings.CutPrefix(data, "city_"); found {
-
 		if state, exists := userStates[chatID]; exists {
 			switch state.ExpectingInput {
 			case "current_city":
@@ -174,12 +164,11 @@ func handleCallback(callback *tgbotapi.CallbackQuery) {
 				} else {
 					send(chatID, fmt.Sprintf(messages.CitySelected, city), mainKeyboard)
 				}
-				delete(userStates, chatID) // Выходим из состояния
+				delete(userStates, chatID)
 
 			case "forecast_city":
-				// Записываем город во временные данные и запрашиваем время
 				state.TempUserData.ForecastCity = city
-				state.ExpectingInput = "forecast_local_hour" // Меняем состояние на ожидание часа
+				state.ExpectingInput = "forecast_local_hour" // меняем состояние на ожидание часа
 				send(chatID, fmt.Sprintf(messages.DailyCitySelected, city), nil)
 				send(chatID, messages.EnterTime, nil)
 			}
@@ -232,7 +221,6 @@ func handleCallback(callback *tgbotapi.CallbackQuery) {
 		}
 		if user != nil {
 			user.WantDaily = false
-			user.ForecastCity = ""
 			if err := storage.SaveUser(user); err != nil {
 				log.Printf("Ошибка сохранения пользователя %d: %v", chatID, err)
 				send(chatID, "Ошибка отключения рассылки", mainKeyboard)
@@ -261,6 +249,7 @@ func getWeather(chatID int64, weatherFunc func(string) (string, error)) {
 	}
 }
 
+// выводим меню с настройками рассылки
 func showForecastMenu(chatID int64) {
 	user, err := storage.GetUser(chatID)
 	if err != nil {
@@ -302,6 +291,7 @@ func askForCity(chatID int64, purpose string) {
 		userStates[chatID] = state
 	}
 	state.ExpectingInput = purpose
+
 	if purpose == "forecast_city" {
 		if user, err := storage.GetUser(chatID); err == nil && user != nil {
 			state.TempUserData = *user
@@ -319,14 +309,14 @@ func send(chatID int64, text string, keyboard any) {
 
 func startScheduler() {
 	c := cron.New()
-	c.AddFunc("0 * * * *", sendDailyForecasts) // Каждый час
+	c.AddFunc("0 * * * *", sendDailyForecasts) // каждый час
 	c.Start()
 }
 
 func sendDailyForecasts() {
-	// Берем текущий час по МСК
+	// берем текущий час по мск
 	currentHour := time.Now().UTC().Add(3 * time.Hour).Hour() // UTC+3 = MSK
-	// Получаем ВСЕХ пользователей с рассылкой из БД
+	// получаем всех пользователей с рассылкой из БД
 	users, err := storage.GetAllUsersForForecast()
 	if err != nil {
 		log.Printf("Ошибка получения пользователей для рассылки: %v", err)
@@ -334,7 +324,7 @@ func sendDailyForecasts() {
 	}
 
 	for _, user := range users {
-		// Рассылаем только в нужный час
+		// рассылаем в нужный час
 		if user.ForecastMskHour == currentHour {
 			go sendForecast(user.ID, user.ForecastCity)
 		}

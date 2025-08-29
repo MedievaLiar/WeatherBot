@@ -149,7 +149,7 @@ func GetUserStats() (total int, withDaily int, err error) {
 	return total, withDaily, nil
 }
 
-// GetCurrentCity возвращает текущий город пользователя из БД
+// Возвращает текущий город пользователя из БД
 func ExtractCurrentCity(chatID int64) (string, bool) {
 	user, err := GetUser(chatID)
 	if err != nil {
@@ -164,6 +164,7 @@ func ExtractCurrentCity(chatID int64) (string, bool) {
 	return user.CurrentCity, true
 }
 
+// возвращает город для прогноза из БД
 func ExtractForecastCity(chatID int64) (string, bool) {
 	user, err := GetUser(chatID)
 	if err != nil {
@@ -204,6 +205,7 @@ func UpdateCurrentCity(chatID int64, city string, username string) error {
 	return nil
 }
 
+// закрываем соединение с базой
 func CloseConnection() {
 	if db != nil {
 		db.Close()

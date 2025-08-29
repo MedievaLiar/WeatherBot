@@ -39,6 +39,7 @@ func getYandexForecast(city string, isToday bool) (models.Forecast, error) {
 	}
 	dayID := fmt.Sprintf("d_%d", targetDay.Day())
 
+	// li раньше было div, периодически меняется
 	dayCard := doc.Find(fmt.Sprintf("li[data-id='%s']", dayID))
 	if dayCard.Length() == 0 {
 		return models.Forecast{}, fmt.Errorf("не найден блок с data-id='%s'", dayID)
