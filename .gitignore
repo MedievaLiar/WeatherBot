@@ -1,4 +1,5 @@
-app/bot/config/accu_keys.yaml
-app/bot/config/api_keys.yaml
-app/bot/storage/bd/
-app/bot/logger/logs/
+app/bot/config/accu_keys.yaml     # API ключи AcuuWeather
+app/bot/config/api_keys.yaml      # API ключи сервисов и телеграма
+app/bot/storage/bd/               # SQLite база данных
+app/bot/logger/logs/              # Логи приложения
+app/bot/storage/cache/            # Кэш погодных данных
