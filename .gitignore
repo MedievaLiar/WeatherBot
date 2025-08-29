@@ -1,4 +1,4 @@
-config/api_keys.yaml
-config/accu_keys.yaml
-bot/storage/users
-adhoc/notes.txt
+app/bot/config/accu_keys.yaml
+app/bot/config/api_keys.yaml
+app/bot/storage/bd/
+app/bot/logger/logs/

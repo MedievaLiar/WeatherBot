@@ -1,0 +1,29 @@
+last_updated: 2025-08-29T16:13:37.547902229+03:00
+data:
+    city: Москва
+    morning:
+        temperature: 13
+        feelslike: 11
+        humidity: 80
+        windspeed: 3
+        precipitation: небольшой дождь
+    day:
+        temperature: 18.85
+        feelslike: 18.259999999999998
+        humidity: 69
+        windspeed: 1.288888888888889
+        precipitation: небольшой дождь
+    evening:
+        temperature: 18.13
+        feelslike: 17.633333333333336
+        humidity: 76
+        windspeed: 2.180555555555556
+        precipitation: облачно с прояснениями
+    night:
+        temperature: 17.18111111111111
+        feelslike: 16.184444444444445
+        humidity: 75
+        windspeed: 2.615740740740741
+        precipitation: облачно с прояснениями
+    sunrise: "05:27"
+    sunset: "19:33"
