@@ -53,3 +53,11 @@
   slug_gismeteo: "khabarovsk"
   gismeteo_number: "4862"
   timezone: "Asia/Vladivostok"
+
+Нижний Новгород:
+  lat: 56.326799
+  lon: 44.00652
+  slug_yandex: "nizhny-novgorod"
+  slug_gismeteo: "nizhny-novgorod"
+  gismeteo_number: "4355"
+  timezone: "Europe/Moscow"

@@ -149,7 +149,7 @@ func GetUserStats() (total int, withDaily int, err error) {
 	return total, withDaily, nil
 }
 
-// Возвращает текущий город пользователя из БД
+// возвращает текущий город пользователя из БД
 func ExtractCurrentCity(chatID int64) (string, bool) {
 	user, err := GetUser(chatID)
 	if err != nil {
@@ -203,6 +203,32 @@ func UpdateCurrentCity(chatID int64, city string, username string) error {
 	SetCurrentCityInCache(chatID, city)
 
 	return nil
+}
+
+func GetAllUsers() ([]models.UserData, error) {
+	rows, err := db.Query("SELECT * FROM users")
+	if err != nil {
+		return nil, err
+	}
+	defer rows.Close()
+
+	var users []models.UserData
+	for rows.Next() {
+		var user models.UserData
+		if err := rows.Scan(
+			&user.ID,
+			&user.Username,
+			&user.CurrentCity,
+			&user.ForecastCity,
+			&user.WantDaily,
+			&user.ForecastMskHour,
+			&user.ForecastLocalHour,
+		); err != nil {
+			return nil, err
+		}
+		users = append(users, user)
+	}
+	return users, nil
 }
 
 // закрываем соединение с базой

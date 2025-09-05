@@ -1,9 +1,9 @@
 package main
 
 import (
+	"app/bot/config"
+	"app/bot/storage/aggregator/weather_sources"
 	"fmt"
-	"weather_bot/aggregator/weather_sources"
-	"weather_bot/config"
 )
 
 func main() {

@@ -24,7 +24,7 @@ type Forecast struct {
 type UserData struct {
 	ID                int64  `db:"id"`                  // ID чата (PRIMARY KEY)
 	Username          string `db:"username"`            // @username пользователя
-	CurrentCity       string `db:"current_city"`        // город для ручных запросов
+	CurrentCity       string `db:"current_city"`        // город для текущих запросов
 	ForecastCity      string `db:"forecast_city"`       // город для ежедневной рассылки
 	WantDaily         bool   `db:"want_daily"`          // включена ли рассылка
 	ForecastMskHour   int    `db:"forecast_msk_hour"`   // час рассылки по мск

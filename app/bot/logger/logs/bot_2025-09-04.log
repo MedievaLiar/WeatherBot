@@ -1,0 +1,191 @@
+2025/09/04 19:10:57 logger.go:61: Система логирования инициализированы для даты 2025-09-04
+2025/09/04 19:11:07 logger.go:98: ERROR: Критическая ошибка: Post "https://api.telegram.org/bot7230987159:AAH2LbpabcPfwk080ruTeDeuS2xiC1YX69s/getMe": dial tcp: lookup api.telegram.org on 127.0.0.11:53: read udp 127.0.0.1:60579->127.0.0.11:53: i/o timeout
+2025/09/04 19:11:10 logger.go:61: Система логирования инициализированы для даты 2025-09-04
+2025/09/04 19:11:20 logger.go:98: ERROR: Критическая ошибка: Post "https://api.telegram.org/bot7230987159:AAH2LbpabcPfwk080ruTeDeuS2xiC1YX69s/getMe": dial tcp: lookup api.telegram.org on 127.0.0.11:53: read udp 127.0.0.1:42628->127.0.0.11:53: i/o timeout
+2025/09/04 19:11:24 logger.go:61: Система логирования инициализированы для даты 2025-09-04
+2025/09/04 19:11:34 logger.go:98: ERROR: Критическая ошибка: Post "https://api.telegram.org/bot7230987159:AAH2LbpabcPfwk080ruTeDeuS2xiC1YX69s/getMe": dial tcp: lookup api.telegram.org on 127.0.0.11:53: read udp 127.0.0.1:52273->127.0.0.11:53: i/o timeout
+2025/09/04 19:11:37 logger.go:61: Система логирования инициализированы для даты 2025-09-04
+2025/09/04 19:11:47 logger.go:98: ERROR: Критическая ошибка: Post "https://api.telegram.org/bot7230987159:AAH2LbpabcPfwk080ruTeDeuS2xiC1YX69s/getMe": dial tcp: lookup api.telegram.org on 127.0.0.11:53: read udp 127.0.0.1:41835->127.0.0.11:53: i/o timeout
+2025/09/04 19:11:50 logger.go:61: Система логирования инициализированы для даты 2025-09-04
+2025/09/04 19:12:00 logger.go:98: ERROR: Критическая ошибка: Post "https://api.telegram.org/bot7230987159:AAH2LbpabcPfwk080ruTeDeuS2xiC1YX69s/getMe": dial tcp: lookup api.telegram.org on 127.0.0.11:53: read udp 127.0.0.1:60263->127.0.0.11:53: i/o timeout
+2025/09/04 19:12:03 logger.go:61: Система логирования инициализированы для даты 2025-09-04
+2025/09/04 19:12:13 logger.go:98: ERROR: Критическая ошибка: Post "https://api.telegram.org/bot7230987159:AAH2LbpabcPfwk080ruTeDeuS2xiC1YX69s/getMe": dial tcp: lookup api.telegram.org on 127.0.0.11:53: read udp 127.0.0.1:54740->127.0.0.11:53: i/o timeout
+2025/09/04 19:12:16 logger.go:61: Система логирования инициализированы для даты 2025-09-04
+2025/09/04 19:12:27 logger.go:98: ERROR: Критическая ошибка: Post "https://api.telegram.org/bot7230987159:AAH2LbpabcPfwk080ruTeDeuS2xiC1YX69s/getMe": dial tcp: lookup api.telegram.org on 127.0.0.11:53: read udp 127.0.0.1:46080->127.0.0.11:53: i/o timeout
+2025/09/04 19:12:30 logger.go:61: Система логирования инициализированы для даты 2025-09-04
+2025/09/04 19:12:40 logger.go:98: ERROR: Критическая ошибка: Post "https://api.telegram.org/bot7230987159:AAH2LbpabcPfwk080ruTeDeuS2xiC1YX69s/getMe": dial tcp: lookup api.telegram.org on 127.0.0.11:53: read udp 127.0.0.1:32921->127.0.0.11:53: i/o timeout
+2025/09/04 19:12:43 logger.go:61: Система логирования инициализированы для даты 2025-09-04
+2025/09/04 19:12:53 logger.go:98: ERROR: Критическая ошибка: Post "https://api.telegram.org/bot7230987159:AAH2LbpabcPfwk080ruTeDeuS2xiC1YX69s/getMe": dial tcp: lookup api.telegram.org on 127.0.0.11:53: read udp 127.0.0.1:45554->127.0.0.11:53: i/o timeout
+2025/09/04 19:12:56 logger.go:61: Система логирования инициализированы для даты 2025-09-04
+2025/09/04 19:13:06 logger.go:98: ERROR: Критическая ошибка: Post "https://api.telegram.org/bot7230987159:AAH2LbpabcPfwk080ruTeDeuS2xiC1YX69s/getMe": dial tcp: lookup api.telegram.org on 127.0.0.11:53: read udp 127.0.0.1:53647->127.0.0.11:53: i/o timeout
+2025/09/04 19:13:09 logger.go:61: Система логирования инициализированы для даты 2025-09-04
+2025/09/04 19:13:19 logger.go:98: ERROR: Критическая ошибка: Post "https://api.telegram.org/bot7230987159:AAH2LbpabcPfwk080ruTeDeuS2xiC1YX69s/getMe": dial tcp: lookup api.telegram.org on 127.0.0.11:53: read udp 127.0.0.1:46502->127.0.0.11:53: i/o timeout
+2025/09/04 19:13:23 logger.go:61: Система логирования инициализированы для даты 2025-09-04
+2025/09/04 19:13:33 logger.go:98: ERROR: Критическая ошибка: Post "https://api.telegram.org/bot7230987159:AAH2LbpabcPfwk080ruTeDeuS2xiC1YX69s/getMe": dial tcp: lookup api.telegram.org on 127.0.0.11:53: read udp 127.0.0.1:53414->127.0.0.11:53: i/o timeout
+2025/09/04 19:13:36 logger.go:61: Система логирования инициализированы для даты 2025-09-04
+2025/09/04 19:13:46 logger.go:98: ERROR: Критическая ошибка: Post "https://api.telegram.org/bot7230987159:AAH2LbpabcPfwk080ruTeDeuS2xiC1YX69s/getMe": dial tcp: lookup api.telegram.org on 127.0.0.11:53: read udp 127.0.0.1:40906->127.0.0.11:53: i/o timeout
+2025/09/04 19:13:49 logger.go:61: Система логирования инициализированы для даты 2025-09-04
+2025/09/04 19:13:59 logger.go:98: ERROR: Критическая ошибка: Post "https://api.telegram.org/bot7230987159:AAH2LbpabcPfwk080ruTeDeuS2xiC1YX69s/getMe": dial tcp: lookup api.telegram.org on 127.0.0.11:53: read udp 127.0.0.1:58081->127.0.0.11:53: i/o timeout
+2025/09/04 19:14:02 logger.go:61: Система логирования инициализированы для даты 2025-09-04
+2025/09/04 19:14:12 logger.go:98: ERROR: Критическая ошибка: Post "https://api.telegram.org/bot7230987159:AAH2LbpabcPfwk080ruTeDeuS2xiC1YX69s/getMe": dial tcp: lookup api.telegram.org on 127.0.0.11:53: read udp 127.0.0.1:60640->127.0.0.11:53: i/o timeout
+2025/09/04 19:14:15 logger.go:61: Система логирования инициализированы для даты 2025-09-04
+2025/09/04 19:14:25 logger.go:98: ERROR: Критическая ошибка: Post "https://api.telegram.org/bot7230987159:AAH2LbpabcPfwk080ruTeDeuS2xiC1YX69s/getMe": dial tcp: lookup api.telegram.org on 127.0.0.11:53: read udp 127.0.0.1:48881->127.0.0.11:53: i/o timeout
+2025/09/04 19:14:29 logger.go:61: Система логирования инициализированы для даты 2025-09-04
+2025/09/04 19:14:39 logger.go:98: ERROR: Критическая ошибка: Post "https://api.telegram.org/bot7230987159:AAH2LbpabcPfwk080ruTeDeuS2xiC1YX69s/getMe": dial tcp: lookup api.telegram.org on 127.0.0.11:53: read udp 127.0.0.1:38589->127.0.0.11:53: i/o timeout
+2025/09/04 19:14:42 logger.go:61: Система логирования инициализированы для даты 2025-09-04
+2025/09/04 19:14:52 logger.go:98: ERROR: Критическая ошибка: Post "https://api.telegram.org/bot7230987159:AAH2LbpabcPfwk080ruTeDeuS2xiC1YX69s/getMe": dial tcp: lookup api.telegram.org on 127.0.0.11:53: read udp 127.0.0.1:39424->127.0.0.11:53: i/o timeout
+2025/09/04 19:14:55 logger.go:61: Система логирования инициализированы для даты 2025-09-04
+2025/09/04 19:15:05 logger.go:98: ERROR: Критическая ошибка: Post "https://api.telegram.org/bot7230987159:AAH2LbpabcPfwk080ruTeDeuS2xiC1YX69s/getMe": dial tcp: lookup api.telegram.org on 127.0.0.11:53: read udp 127.0.0.1:49774->127.0.0.11:53: i/o timeout
+2025/09/04 19:15:08 logger.go:61: Система логирования инициализированы для даты 2025-09-04
+2025/09/04 19:15:18 logger.go:98: ERROR: Критическая ошибка: Post "https://api.telegram.org/bot7230987159:AAH2LbpabcPfwk080ruTeDeuS2xiC1YX69s/getMe": dial tcp: lookup api.telegram.org on 127.0.0.11:53: read udp 127.0.0.1:49621->127.0.0.11:53: i/o timeout
+2025/09/04 19:15:21 logger.go:61: Система логирования инициализированы для даты 2025-09-04
+2025/09/04 19:15:31 logger.go:98: ERROR: Критическая ошибка: Post "https://api.telegram.org/bot7230987159:AAH2LbpabcPfwk080ruTeDeuS2xiC1YX69s/getMe": dial tcp: lookup api.telegram.org on 127.0.0.11:53: read udp 127.0.0.1:43273->127.0.0.11:53: i/o timeout
+2025/09/04 19:15:35 logger.go:61: Система логирования инициализированы для даты 2025-09-04
+2025/09/04 19:15:45 logger.go:98: ERROR: Критическая ошибка: Post "https://api.telegram.org/bot7230987159:AAH2LbpabcPfwk080ruTeDeuS2xiC1YX69s/getMe": dial tcp: lookup api.telegram.org on 127.0.0.11:53: read udp 127.0.0.1:44332->127.0.0.11:53: i/o timeout
+2025/09/04 19:15:48 logger.go:61: Система логирования инициализированы для даты 2025-09-04
+2025/09/04 19:15:58 logger.go:98: ERROR: Критическая ошибка: Post "https://api.telegram.org/bot7230987159:AAH2LbpabcPfwk080ruTeDeuS2xiC1YX69s/getMe": dial tcp: lookup api.telegram.org on 127.0.0.11:53: read udp 127.0.0.1:38091->127.0.0.11:53: i/o timeout
+2025/09/04 19:16:01 logger.go:61: Система логирования инициализированы для даты 2025-09-04
+2025/09/04 19:16:11 logger.go:98: ERROR: Критическая ошибка: Post "https://api.telegram.org/bot7230987159:AAH2LbpabcPfwk080ruTeDeuS2xiC1YX69s/getMe": dial tcp: lookup api.telegram.org on 127.0.0.11:53: read udp 127.0.0.1:58718->127.0.0.11:53: i/o timeout
+2025/09/04 19:16:14 logger.go:61: Система логирования инициализированы для даты 2025-09-04
+2025/09/04 19:16:24 logger.go:98: ERROR: Критическая ошибка: Post "https://api.telegram.org/bot7230987159:AAH2LbpabcPfwk080ruTeDeuS2xiC1YX69s/getMe": dial tcp: lookup api.telegram.org on 127.0.0.11:53: read udp 127.0.0.1:54228->127.0.0.11:53: i/o timeout
+2025/09/04 19:16:27 logger.go:61: Система логирования инициализированы для даты 2025-09-04
+2025/09/04 19:16:37 logger.go:98: ERROR: Критическая ошибка: Post "https://api.telegram.org/bot7230987159:AAH2LbpabcPfwk080ruTeDeuS2xiC1YX69s/getMe": dial tcp: lookup api.telegram.org on 127.0.0.11:53: read udp 127.0.0.1:49214->127.0.0.11:53: i/o timeout
+2025/09/04 19:16:41 logger.go:61: Система логирования инициализированы для даты 2025-09-04
+2025/09/04 19:16:51 logger.go:98: ERROR: Критическая ошибка: Post "https://api.telegram.org/bot7230987159:AAH2LbpabcPfwk080ruTeDeuS2xiC1YX69s/getMe": dial tcp: lookup api.telegram.org on 127.0.0.11:53: read udp 127.0.0.1:57273->127.0.0.11:53: i/o timeout
+2025/09/04 19:16:54 logger.go:61: Система логирования инициализированы для даты 2025-09-04
+2025/09/04 19:17:04 logger.go:98: ERROR: Критическая ошибка: Post "https://api.telegram.org/bot7230987159:AAH2LbpabcPfwk080ruTeDeuS2xiC1YX69s/getMe": dial tcp: lookup api.telegram.org on 127.0.0.11:53: read udp 127.0.0.1:55656->127.0.0.11:53: i/o timeout
+2025/09/04 19:17:07 logger.go:61: Система логирования инициализированы для даты 2025-09-04
+2025/09/04 19:17:17 logger.go:98: ERROR: Критическая ошибка: Post "https://api.telegram.org/bot7230987159:AAH2LbpabcPfwk080ruTeDeuS2xiC1YX69s/getMe": dial tcp: lookup api.telegram.org on 127.0.0.11:53: read udp 127.0.0.1:44646->127.0.0.11:53: i/o timeout
+2025/09/04 19:17:20 logger.go:61: Система логирования инициализированы для даты 2025-09-04
+2025/09/04 19:17:30 logger.go:98: ERROR: Критическая ошибка: Post "https://api.telegram.org/bot7230987159:AAH2LbpabcPfwk080ruTeDeuS2xiC1YX69s/getMe": dial tcp: lookup api.telegram.org on 127.0.0.11:53: read udp 127.0.0.1:51265->127.0.0.11:53: i/o timeout
+2025/09/04 19:17:34 logger.go:61: Система логирования инициализированы для даты 2025-09-04
+2025/09/04 19:17:44 logger.go:98: ERROR: Критическая ошибка: Post "https://api.telegram.org/bot7230987159:AAH2LbpabcPfwk080ruTeDeuS2xiC1YX69s/getMe": dial tcp: lookup api.telegram.org on 127.0.0.11:53: read udp 127.0.0.1:53601->127.0.0.11:53: i/o timeout
+2025/09/04 19:17:47 logger.go:61: Система логирования инициализированы для даты 2025-09-04
+2025/09/04 19:17:57 logger.go:98: ERROR: Критическая ошибка: Post "https://api.telegram.org/bot7230987159:AAH2LbpabcPfwk080ruTeDeuS2xiC1YX69s/getMe": dial tcp: lookup api.telegram.org on 127.0.0.11:53: read udp 127.0.0.1:44367->127.0.0.11:53: i/o timeout
+2025/09/04 19:18:00 logger.go:61: Система логирования инициализированы для даты 2025-09-04
+2025/09/04 19:18:10 logger.go:98: ERROR: Критическая ошибка: Post "https://api.telegram.org/bot7230987159:AAH2LbpabcPfwk080ruTeDeuS2xiC1YX69s/getMe": dial tcp: lookup api.telegram.org on 127.0.0.11:53: read udp 127.0.0.1:43049->127.0.0.11:53: i/o timeout
+2025/09/04 19:18:13 logger.go:61: Система логирования инициализированы для даты 2025-09-04
+2025/09/04 19:18:23 logger.go:98: ERROR: Критическая ошибка: Post "https://api.telegram.org/bot7230987159:AAH2LbpabcPfwk080ruTeDeuS2xiC1YX69s/getMe": dial tcp: lookup api.telegram.org on 127.0.0.11:53: read udp 127.0.0.1:44713->127.0.0.11:53: i/o timeout
+2025/09/04 19:18:26 logger.go:61: Система логирования инициализированы для даты 2025-09-04
+2025/09/04 19:18:36 logger.go:98: ERROR: Критическая ошибка: Post "https://api.telegram.org/bot7230987159:AAH2LbpabcPfwk080ruTeDeuS2xiC1YX69s/getMe": dial tcp: lookup api.telegram.org on 127.0.0.11:53: read udp 127.0.0.1:47550->127.0.0.11:53: i/o timeout
+2025/09/04 19:18:40 logger.go:61: Система логирования инициализированы для даты 2025-09-04
+2025/09/04 19:18:50 logger.go:98: ERROR: Критическая ошибка: Post "https://api.telegram.org/bot7230987159:AAH2LbpabcPfwk080ruTeDeuS2xiC1YX69s/getMe": dial tcp: lookup api.telegram.org on 127.0.0.11:53: read udp 127.0.0.1:56396->127.0.0.11:53: i/o timeout
+2025/09/04 19:18:53 logger.go:61: Система логирования инициализированы для даты 2025-09-04
+2025/09/04 19:19:03 logger.go:98: ERROR: Критическая ошибка: Post "https://api.telegram.org/bot7230987159:AAH2LbpabcPfwk080ruTeDeuS2xiC1YX69s/getMe": dial tcp: lookup api.telegram.org on 127.0.0.11:53: read udp 127.0.0.1:45781->127.0.0.11:53: i/o timeout
+2025/09/04 19:19:06 logger.go:61: Система логирования инициализированы для даты 2025-09-04
+2025/09/04 19:19:16 logger.go:98: ERROR: Критическая ошибка: Post "https://api.telegram.org/bot7230987159:AAH2LbpabcPfwk080ruTeDeuS2xiC1YX69s/getMe": dial tcp: lookup api.telegram.org on 127.0.0.11:53: read udp 127.0.0.1:44563->127.0.0.11:53: i/o timeout
+2025/09/04 19:19:19 logger.go:61: Система логирования инициализированы для даты 2025-09-04
+2025/09/04 19:19:29 logger.go:98: ERROR: Критическая ошибка: Post "https://api.telegram.org/bot7230987159:AAH2LbpabcPfwk080ruTeDeuS2xiC1YX69s/getMe": dial tcp: lookup api.telegram.org on 127.0.0.11:53: read udp 127.0.0.1:58351->127.0.0.11:53: i/o timeout
+2025/09/04 19:19:32 logger.go:61: Система логирования инициализированы для даты 2025-09-04
+2025/09/04 19:19:42 logger.go:98: ERROR: Критическая ошибка: Post "https://api.telegram.org/bot7230987159:AAH2LbpabcPfwk080ruTeDeuS2xiC1YX69s/getMe": dial tcp: lookup api.telegram.org on 127.0.0.11:53: read udp 127.0.0.1:48052->127.0.0.11:53: i/o timeout
+2025/09/04 19:19:46 logger.go:61: Система логирования инициализированы для даты 2025-09-04
+2025/09/04 19:19:56 logger.go:98: ERROR: Критическая ошибка: Post "https://api.telegram.org/bot7230987159:AAH2LbpabcPfwk080ruTeDeuS2xiC1YX69s/getMe": dial tcp: lookup api.telegram.org on 127.0.0.11:53: read udp 127.0.0.1:36102->127.0.0.11:53: i/o timeout
+2025/09/04 19:19:59 logger.go:61: Система логирования инициализированы для даты 2025-09-04
+2025/09/04 19:20:09 logger.go:98: ERROR: Критическая ошибка: Post "https://api.telegram.org/bot7230987159:AAH2LbpabcPfwk080ruTeDeuS2xiC1YX69s/getMe": dial tcp: lookup api.telegram.org on 127.0.0.11:53: read udp 127.0.0.1:42879->127.0.0.11:53: i/o timeout
+2025/09/04 19:20:12 logger.go:61: Система логирования инициализированы для даты 2025-09-04
+2025/09/04 19:20:22 logger.go:98: ERROR: Критическая ошибка: Post "https://api.telegram.org/bot7230987159:AAH2LbpabcPfwk080ruTeDeuS2xiC1YX69s/getMe": dial tcp: lookup api.telegram.org on 127.0.0.11:53: read udp 127.0.0.1:39418->127.0.0.11:53: i/o timeout
+2025/09/04 19:20:25 logger.go:61: Система логирования инициализированы для даты 2025-09-04
+2025/09/04 19:20:35 logger.go:98: ERROR: Критическая ошибка: Post "https://api.telegram.org/bot7230987159:AAH2LbpabcPfwk080ruTeDeuS2xiC1YX69s/getMe": dial tcp: lookup api.telegram.org on 127.0.0.11:53: read udp 127.0.0.1:53734->127.0.0.11:53: i/o timeout
+2025/09/04 19:20:38 logger.go:61: Система логирования инициализированы для даты 2025-09-04
+2025/09/04 19:20:48 logger.go:98: ERROR: Критическая ошибка: Post "https://api.telegram.org/bot7230987159:AAH2LbpabcPfwk080ruTeDeuS2xiC1YX69s/getMe": dial tcp: lookup api.telegram.org on 127.0.0.11:53: read udp 127.0.0.1:45214->127.0.0.11:53: i/o timeout
+2025/09/04 19:20:52 logger.go:61: Система логирования инициализированы для даты 2025-09-04
+2025/09/04 19:21:02 logger.go:98: ERROR: Критическая ошибка: Post "https://api.telegram.org/bot7230987159:AAH2LbpabcPfwk080ruTeDeuS2xiC1YX69s/getMe": dial tcp: lookup api.telegram.org on 127.0.0.11:53: read udp 127.0.0.1:49852->127.0.0.11:53: i/o timeout
+2025/09/04 19:21:05 logger.go:61: Система логирования инициализированы для даты 2025-09-04
+2025/09/04 19:21:15 logger.go:98: ERROR: Критическая ошибка: Post "https://api.telegram.org/bot7230987159:AAH2LbpabcPfwk080ruTeDeuS2xiC1YX69s/getMe": dial tcp: lookup api.telegram.org on 127.0.0.11:53: read udp 127.0.0.1:34732->127.0.0.11:53: i/o timeout
+2025/09/04 19:21:18 logger.go:61: Система логирования инициализированы для даты 2025-09-04
+2025/09/04 19:21:28 logger.go:98: ERROR: Критическая ошибка: Post "https://api.telegram.org/bot7230987159:AAH2LbpabcPfwk080ruTeDeuS2xiC1YX69s/getMe": dial tcp: lookup api.telegram.org on 127.0.0.11:53: read udp 127.0.0.1:54511->127.0.0.11:53: i/o timeout
+2025/09/04 19:21:31 logger.go:61: Система логирования инициализированы для даты 2025-09-04
+2025/09/04 19:21:41 logger.go:98: ERROR: Критическая ошибка: Post "https://api.telegram.org/bot7230987159:AAH2LbpabcPfwk080ruTeDeuS2xiC1YX69s/getMe": dial tcp: lookup api.telegram.org on 127.0.0.11:53: read udp 127.0.0.1:35157->127.0.0.11:53: i/o timeout
+2025/09/04 19:21:44 logger.go:61: Система логирования инициализированы для даты 2025-09-04
+2025/09/04 19:21:54 logger.go:98: ERROR: Критическая ошибка: Post "https://api.telegram.org/bot7230987159:AAH2LbpabcPfwk080ruTeDeuS2xiC1YX69s/getMe": dial tcp: lookup api.telegram.org on 127.0.0.11:53: read udp 127.0.0.1:60183->127.0.0.11:53: i/o timeout
+2025/09/04 19:21:58 logger.go:61: Система логирования инициализированы для даты 2025-09-04
+2025/09/04 19:22:08 logger.go:98: ERROR: Критическая ошибка: Post "https://api.telegram.org/bot7230987159:AAH2LbpabcPfwk080ruTeDeuS2xiC1YX69s/getMe": dial tcp: lookup api.telegram.org on 127.0.0.11:53: read udp 127.0.0.1:41238->127.0.0.11:53: i/o timeout
+2025/09/04 19:22:11 logger.go:61: Система логирования инициализированы для даты 2025-09-04
+2025/09/04 19:22:21 logger.go:98: ERROR: Критическая ошибка: Post "https://api.telegram.org/bot7230987159:AAH2LbpabcPfwk080ruTeDeuS2xiC1YX69s/getMe": dial tcp: lookup api.telegram.org on 127.0.0.11:53: read udp 127.0.0.1:60134->127.0.0.11:53: i/o timeout
+2025/09/04 19:22:24 logger.go:61: Система логирования инициализированы для даты 2025-09-04
+2025/09/04 19:22:34 logger.go:98: ERROR: Критическая ошибка: Post "https://api.telegram.org/bot7230987159:AAH2LbpabcPfwk080ruTeDeuS2xiC1YX69s/getMe": dial tcp: lookup api.telegram.org on 127.0.0.11:53: read udp 127.0.0.1:52202->127.0.0.11:53: i/o timeout
+2025/09/04 19:22:37 logger.go:61: Система логирования инициализированы для даты 2025-09-04
+2025/09/04 19:22:47 logger.go:98: ERROR: Критическая ошибка: Post "https://api.telegram.org/bot7230987159:AAH2LbpabcPfwk080ruTeDeuS2xiC1YX69s/getMe": dial tcp: lookup api.telegram.org on 127.0.0.11:53: read udp 127.0.0.1:39160->127.0.0.11:53: i/o timeout
+2025/09/04 19:22:51 logger.go:61: Система логирования инициализированы для даты 2025-09-04
+2025/09/04 19:23:01 logger.go:98: ERROR: Критическая ошибка: Post "https://api.telegram.org/bot7230987159:AAH2LbpabcPfwk080ruTeDeuS2xiC1YX69s/getMe": dial tcp: lookup api.telegram.org on 127.0.0.11:53: read udp 127.0.0.1:45222->127.0.0.11:53: i/o timeout
+2025/09/04 19:23:04 logger.go:61: Система логирования инициализированы для даты 2025-09-04
+2025/09/04 19:23:14 logger.go:98: ERROR: Критическая ошибка: Post "https://api.telegram.org/bot7230987159:AAH2LbpabcPfwk080ruTeDeuS2xiC1YX69s/getMe": dial tcp: lookup api.telegram.org on 127.0.0.11:53: read udp 127.0.0.1:60934->127.0.0.11:53: i/o timeout
+2025/09/04 19:23:17 logger.go:61: Система логирования инициализированы для даты 2025-09-04
+2025/09/04 19:23:27 logger.go:98: ERROR: Критическая ошибка: Post "https://api.telegram.org/bot7230987159:AAH2LbpabcPfwk080ruTeDeuS2xiC1YX69s/getMe": dial tcp: lookup api.telegram.org on 127.0.0.11:53: read udp 127.0.0.1:53898->127.0.0.11:53: i/o timeout
+2025/09/04 19:23:30 logger.go:61: Система логирования инициализированы для даты 2025-09-04
+2025/09/04 19:23:40 logger.go:98: ERROR: Критическая ошибка: Post "https://api.telegram.org/bot7230987159:AAH2LbpabcPfwk080ruTeDeuS2xiC1YX69s/getMe": dial tcp: lookup api.telegram.org on 127.0.0.11:53: read udp 127.0.0.1:53209->127.0.0.11:53: i/o timeout
+2025/09/04 19:23:43 logger.go:61: Система логирования инициализированы для даты 2025-09-04
+2025/09/04 19:23:53 logger.go:98: ERROR: Критическая ошибка: Post "https://api.telegram.org/bot7230987159:AAH2LbpabcPfwk080ruTeDeuS2xiC1YX69s/getMe": dial tcp: lookup api.telegram.org on 127.0.0.11:53: read udp 127.0.0.1:54668->127.0.0.11:53: i/o timeout
+2025/09/04 19:23:57 logger.go:61: Система логирования инициализированы для даты 2025-09-04
+2025/09/04 19:24:07 logger.go:98: ERROR: Критическая ошибка: Post "https://api.telegram.org/bot7230987159:AAH2LbpabcPfwk080ruTeDeuS2xiC1YX69s/getMe": dial tcp: lookup api.telegram.org on 127.0.0.11:53: read udp 127.0.0.1:49979->127.0.0.11:53: i/o timeout
+2025/09/04 19:24:10 logger.go:61: Система логирования инициализированы для даты 2025-09-04
+2025/09/04 19:24:20 logger.go:98: ERROR: Критическая ошибка: Post "https://api.telegram.org/bot7230987159:AAH2LbpabcPfwk080ruTeDeuS2xiC1YX69s/getMe": dial tcp: lookup api.telegram.org on 127.0.0.11:53: read udp 127.0.0.1:43743->127.0.0.11:53: i/o timeout
+2025/09/04 19:24:23 logger.go:61: Система логирования инициализированы для даты 2025-09-04
+2025/09/04 19:24:33 logger.go:98: ERROR: Критическая ошибка: Post "https://api.telegram.org/bot7230987159:AAH2LbpabcPfwk080ruTeDeuS2xiC1YX69s/getMe": dial tcp: lookup api.telegram.org on 127.0.0.11:53: read udp 127.0.0.1:46974->127.0.0.11:53: i/o timeout
+2025/09/04 19:24:36 logger.go:61: Система логирования инициализированы для даты 2025-09-04
+2025/09/04 19:24:46 logger.go:98: ERROR: Критическая ошибка: Post "https://api.telegram.org/bot7230987159:AAH2LbpabcPfwk080ruTeDeuS2xiC1YX69s/getMe": dial tcp: lookup api.telegram.org on 127.0.0.11:53: read udp 127.0.0.1:44400->127.0.0.11:53: i/o timeout
+2025/09/04 19:24:49 logger.go:61: Система логирования инициализированы для даты 2025-09-04
+2025/09/04 19:24:59 logger.go:98: ERROR: Критическая ошибка: Post "https://api.telegram.org/bot7230987159:AAH2LbpabcPfwk080ruTeDeuS2xiC1YX69s/getMe": dial tcp: lookup api.telegram.org on 127.0.0.11:53: read udp 127.0.0.1:43930->127.0.0.11:53: i/o timeout
+2025/09/04 19:25:03 logger.go:61: Система логирования инициализированы для даты 2025-09-04
+2025/09/04 19:25:13 logger.go:98: ERROR: Критическая ошибка: Post "https://api.telegram.org/bot7230987159:AAH2LbpabcPfwk080ruTeDeuS2xiC1YX69s/getMe": dial tcp: lookup api.telegram.org on 127.0.0.11:53: read udp 127.0.0.1:44238->127.0.0.11:53: i/o timeout
+2025/09/04 19:25:16 logger.go:61: Система логирования инициализированы для даты 2025-09-04
+2025/09/04 19:25:26 logger.go:98: ERROR: Критическая ошибка: Post "https://api.telegram.org/bot7230987159:AAH2LbpabcPfwk080ruTeDeuS2xiC1YX69s/getMe": dial tcp: lookup api.telegram.org on 127.0.0.11:53: read udp 127.0.0.1:43555->127.0.0.11:53: i/o timeout
+2025/09/04 19:25:29 logger.go:61: Система логирования инициализированы для даты 2025-09-04
+2025/09/04 19:25:39 logger.go:98: ERROR: Критическая ошибка: Post "https://api.telegram.org/bot7230987159:AAH2LbpabcPfwk080ruTeDeuS2xiC1YX69s/getMe": dial tcp: lookup api.telegram.org on 127.0.0.11:53: read udp 127.0.0.1:59879->127.0.0.11:53: i/o timeout
+2025/09/04 19:25:42 logger.go:61: Система логирования инициализированы для даты 2025-09-04
+2025/09/04 19:25:52 logger.go:98: ERROR: Критическая ошибка: Post "https://api.telegram.org/bot7230987159:AAH2LbpabcPfwk080ruTeDeuS2xiC1YX69s/getMe": dial tcp: lookup api.telegram.org on 127.0.0.11:53: read udp 127.0.0.1:58395->127.0.0.11:53: i/o timeout
+2025/09/04 19:25:55 logger.go:61: Система логирования инициализированы для даты 2025-09-04
+2025/09/04 19:26:05 logger.go:98: ERROR: Критическая ошибка: Post "https://api.telegram.org/bot7230987159:AAH2LbpabcPfwk080ruTeDeuS2xiC1YX69s/getMe": dial tcp: lookup api.telegram.org on 127.0.0.11:53: read udp 127.0.0.1:58796->127.0.0.11:53: i/o timeout
+2025/09/04 19:26:09 logger.go:61: Система логирования инициализированы для даты 2025-09-04
+2025/09/04 19:26:19 logger.go:98: ERROR: Критическая ошибка: Post "https://api.telegram.org/bot7230987159:AAH2LbpabcPfwk080ruTeDeuS2xiC1YX69s/getMe": dial tcp: lookup api.telegram.org on 127.0.0.11:53: read udp 127.0.0.1:45419->127.0.0.11:53: i/o timeout
+2025/09/04 19:26:22 logger.go:61: Система логирования инициализированы для даты 2025-09-04
+2025/09/04 19:26:32 logger.go:98: ERROR: Критическая ошибка: Post "https://api.telegram.org/bot7230987159:AAH2LbpabcPfwk080ruTeDeuS2xiC1YX69s/getMe": dial tcp: lookup api.telegram.org on 127.0.0.11:53: read udp 127.0.0.1:55942->127.0.0.11:53: i/o timeout
+2025/09/04 19:26:35 logger.go:61: Система логирования инициализированы для даты 2025-09-04
+2025/09/04 19:26:45 logger.go:98: ERROR: Критическая ошибка: Post "https://api.telegram.org/bot7230987159:AAH2LbpabcPfwk080ruTeDeuS2xiC1YX69s/getMe": dial tcp: lookup api.telegram.org on 127.0.0.11:53: read udp 127.0.0.1:41551->127.0.0.11:53: i/o timeout
+2025/09/04 19:26:48 logger.go:61: Система логирования инициализированы для даты 2025-09-04
+2025/09/04 19:26:58 logger.go:98: ERROR: Критическая ошибка: Post "https://api.telegram.org/bot7230987159:AAH2LbpabcPfwk080ruTeDeuS2xiC1YX69s/getMe": dial tcp: lookup api.telegram.org on 127.0.0.11:53: read udp 127.0.0.1:57561->127.0.0.11:53: i/o timeout
+2025/09/04 19:27:01 logger.go:61: Система логирования инициализированы для даты 2025-09-04
+2025/09/04 19:27:11 logger.go:98: ERROR: Критическая ошибка: Post "https://api.telegram.org/bot7230987159:AAH2LbpabcPfwk080ruTeDeuS2xiC1YX69s/getMe": dial tcp: lookup api.telegram.org on 127.0.0.11:53: read udp 127.0.0.1:53383->127.0.0.11:53: i/o timeout
+2025/09/04 19:27:15 logger.go:61: Система логирования инициализированы для даты 2025-09-04
+2025/09/04 19:27:25 logger.go:98: ERROR: Критическая ошибка: Post "https://api.telegram.org/bot7230987159:AAH2LbpabcPfwk080ruTeDeuS2xiC1YX69s/getMe": dial tcp: lookup api.telegram.org on 127.0.0.11:53: read udp 127.0.0.1:36498->127.0.0.11:53: i/o timeout
+2025/09/04 19:27:28 logger.go:61: Система логирования инициализированы для даты 2025-09-04
+2025/09/04 19:27:38 logger.go:98: ERROR: Критическая ошибка: Post "https://api.telegram.org/bot7230987159:AAH2LbpabcPfwk080ruTeDeuS2xiC1YX69s/getMe": dial tcp: lookup api.telegram.org on 127.0.0.11:53: read udp 127.0.0.1:55959->127.0.0.11:53: i/o timeout
+2025/09/04 19:27:41 logger.go:61: Система логирования инициализированы для даты 2025-09-04
+2025/09/04 19:27:51 logger.go:98: ERROR: Критическая ошибка: Post "https://api.telegram.org/bot7230987159:AAH2LbpabcPfwk080ruTeDeuS2xiC1YX69s/getMe": dial tcp: lookup api.telegram.org on 127.0.0.11:53: read udp 127.0.0.1:59976->127.0.0.11:53: i/o timeout
+2025/09/04 19:27:54 logger.go:61: Система логирования инициализированы для даты 2025-09-04
+2025/09/04 19:28:19 logger.go:61: Система логирования инициализированы для даты 2025-09-04
+2025/09/04 19:28:29 logger.go:98: ERROR: Критическая ошибка: Post "https://api.telegram.org/bot7230987159:AAH2LbpabcPfwk080ruTeDeuS2xiC1YX69s/getMe": dial tcp: lookup api.telegram.org on 127.0.0.11:53: read udp 127.0.0.1:48821->127.0.0.11:53: i/o timeout
+2025/09/04 19:28:32 logger.go:61: Система логирования инициализированы для даты 2025-09-04
+2025/09/04 19:28:42 logger.go:98: ERROR: Критическая ошибка: Post "https://api.telegram.org/bot7230987159:AAH2LbpabcPfwk080ruTeDeuS2xiC1YX69s/getMe": dial tcp: lookup api.telegram.org on 127.0.0.11:53: read udp 127.0.0.1:59505->127.0.0.11:53: i/o timeout
+2025/09/04 19:28:45 logger.go:61: Система логирования инициализированы для даты 2025-09-04
+2025/09/04 19:28:55 logger.go:98: ERROR: Критическая ошибка: Post "https://api.telegram.org/bot7230987159:AAH2LbpabcPfwk080ruTeDeuS2xiC1YX69s/getMe": dial tcp: lookup api.telegram.org on 127.0.0.11:53: read udp 127.0.0.1:59006->127.0.0.11:53: i/o timeout
+2025/09/04 19:28:58 logger.go:61: Система логирования инициализированы для даты 2025-09-04
+2025/09/04 19:29:08 logger.go:98: ERROR: Критическая ошибка: Post "https://api.telegram.org/bot7230987159:AAH2LbpabcPfwk080ruTeDeuS2xiC1YX69s/getMe": dial tcp: lookup api.telegram.org on 127.0.0.11:53: read udp 127.0.0.1:58368->127.0.0.11:53: i/o timeout
+2025/09/04 19:29:11 logger.go:61: Система логирования инициализированы для даты 2025-09-04
+2025/09/04 19:29:55 logger.go:61: Система логирования инициализированы для даты 2025-09-04
+2025/09/04 19:29:56 logger.go:98: ERROR: YandexNow: не найден блок с погодой для Уссурийск
+2025/09/04 19:29:56 logger.go:98: ERROR: YandexNow: ошибка для Уссурийск: блок погоды не найден
+2025/09/04 19:29:59 logger.go:98: ERROR: GismeteoNow: ошибка для Уссурийск: ошибка запроса: 500
+2025/09/04 19:33:02 logger.go:79: ДОБАВЛЕН ПОЛЬЗОВАТЕЛЬ: ID=5519824145, Username=@sohosquare, CurrentCity=Владивосток, ForecastCity=Санкт-Петербург, WantDaily=true
+2025/09/04 19:33:04 logger.go:98: ERROR: YandexNow: не найден блок с погодой для Владивосток
+2025/09/04 19:33:04 logger.go:98: ERROR: YandexNow: ошибка для Владивосток: блок погоды не найден
+2025/09/04 19:33:14 logger.go:79: ДОБАВЛЕН ПОЛЬЗОВАТЕЛЬ: ID=5519824145, Username=@sohosquare, CurrentCity=Санкт-Петербург, ForecastCity=Санкт-Петербург, WantDaily=true
+2025/09/04 19:33:16 logger.go:98: ERROR: YandexNow: не найден блок с погодой для Санкт-Петербург
+2025/09/04 19:33:16 logger.go:98: ERROR: YandexNow: ошибка для Санкт-Петербург: блок погоды не найден
+2025/09/04 20:12:27 logger.go:79: ДОБАВЛЕН ПОЛЬЗОВАТЕЛЬ: ID=5519824145, Username=@sohosquare, CurrentCity=Владивосток, ForecastCity=Санкт-Петербург, WantDaily=true
+2025/09/04 20:12:28 logger.go:98: ERROR: YandexNow: не найден блок с погодой для Владивосток
+2025/09/04 20:12:28 logger.go:98: ERROR: YandexNow: ошибка для Владивосток: блок погоды не найден
+2025/09/04 20:24:05 logger.go:79: ДОБАВЛЕН ПОЛЬЗОВАТЕЛЬ: ID=5519824145, Username=@sohosquare, CurrentCity=Екатеринбург, ForecastCity=Санкт-Петербург, WantDaily=true
+2025/09/04 20:24:08 logger.go:98: ERROR: Yandex: не найден блок с data-id='d_5' для города Екатеринбург
+2025/09/04 20:24:08 logger.go:98: ERROR: GetTomorrowData: ошибка для Екатеринбург: блок дня не найден
+2025/09/04 20:24:11 logger.go:98: ERROR: Yandex: не найден блок с data-id='d_4' для города Екатеринбург
+2025/09/04 20:24:22 logger.go:98: ERROR: YandexNow: не найден блок с погодой для Екатеринбург
+2025/09/04 20:24:22 logger.go:98: ERROR: YandexNow: ошибка для Екатеринбург: блок погоды не найден
+2025/09/04 21:38:01 logger.go:61: Система логирования инициализированы для даты 2025-09-04
+2025/09/04 21:54:28 logger.go:61: Система логирования инициализированы для даты 2025-09-04
+2025/09/04 21:55:22 logger.go:98: ERROR: Yandex: не найден блок с data-day='1_5' для города Екатеринбург
+2025/09/04 21:55:22 logger.go:98: ERROR: GetTomorrowData: ошибка для Екатеринбург: блок дня не найден
+2025/09/04 22:05:06 logger.go:98: ERROR: Yandex: не найден блок с data-day='1_6' для города Екатеринбург
+2025/09/04 22:05:06 logger.go:98: ERROR: GetTomorrowData: ошибка для Екатеринбург: блок дня не найден
+2025/09/04 22:07:44 logger.go:98: ERROR: Yandex: не найден блок с data-day='1_6' для города Екатеринбург
+2025/09/04 22:07:44 logger.go:98: ERROR: GetTomorrowData: ошибка для Екатеринбург: блок дня не найден

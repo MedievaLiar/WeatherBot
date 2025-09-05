@@ -39,12 +39,13 @@ func SaveRawAccuWeatherJSON(city string) error {
 		return fmt.Errorf("ошибка при маршалинге JSON: %w", err)
 	}
 
-	_, thisFile, _, ok := runtime.Caller(0)
+	_, thisFile, _, ok := runtime.Caller(0) // текущая функция
 	if !ok {
 		return fmt.Errorf("не удалось определить путь к текущему файлу")
 	}
 
 	saveDir := filepath.Join(filepath.Dir(thisFile), "tests/accuweather_check/raw_json")
+	// права доступа к директории
 	if err := os.MkdirAll(saveDir, 0755); err != nil {
 		return fmt.Errorf("не удалось создать директорию: %w", err)
 	}
@@ -52,6 +53,7 @@ func SaveRawAccuWeatherJSON(city string) error {
 	filename := fmt.Sprintf("accuweather_raw_%s.json", time.Now().Format("2006-01-02_15-04"))
 	fullPath := filepath.Join(saveDir, filename)
 
+	// права доступа к файлу
 	if err := os.WriteFile(fullPath, rawJSON, 0644); err != nil {
 		return fmt.Errorf("ошибка при сохранении файла: %w", err)
 	}

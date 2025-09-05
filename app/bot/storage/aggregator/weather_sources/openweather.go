@@ -8,6 +8,7 @@ import (
 	"time"
 
 	"app/bot/config"
+	"app/bot/logger"
 	"app/bot/models"
 	"app/bot/storage/aggregator/weather_sources/utils"
 )
@@ -38,18 +39,27 @@ func GetOpenWeatherForecast(city string) (models.Forecast, error) {
 
 	resp, err := http.Get(url)
 	if err != nil {
+		logger.Error("OpenWeather: ошибка сети для %s: %v", city, err)
 		return models.Forecast{}, err
 	}
 	defer resp.Body.Close()
 
 	if resp.StatusCode != 200 {
-		return models.Forecast{}, fmt.Errorf("bad response from OpenWeather: %d", resp.StatusCode)
+		logger.Error("OpenWeather: HTTP ошибка %d для города %s", resp.StatusCode, city)
+		return models.Forecast{}, err
 	}
 
 	var data OpenWeatherResponse
 	if err := json.NewDecoder(resp.Body).Decode(&data); err != nil {
+		logger.Error("OpenWeather: ошибка парсинга json для %s: %d", city, err)
 		return models.Forecast{}, err
 	}
+
+	if len(data.List) == 0 {
+		logger.Error("OpenWeather: пустой ответ для %s", city)
+		return models.Forecast{}, fmt.Errorf("пустой ответ от API")
+	}
+
 	return processOpenWeatherData(data, city), nil
 }
 
@@ -64,5 +74,15 @@ func processOpenWeatherData(data OpenWeatherResponse, city string) models.Foreca
 		return dt, elem.Main.Temp, elem.Main.FeelsLike, elem.Main.Humidity, elem.Wind.Speed, true
 	}
 
+	forecast := utils.ProcessWeatherData(data.List, city, sample, false, loc)
+
+	if isEmptyForecast(forecast) {
+		logger.Error("OpenWeather: получен пустой прогноз для города %s", city)
+	}
+
 	return utils.ProcessWeatherData(data.List, city, sample, false, loc)
+}
+
+func isEmptyForecast(f models.Forecast) bool {
+	return f.Morning.Temperature == 0 && f.Day.Temperature == 0 && f.Evening.Temperature == 0 && f.Evening.Temperature == 0
 }

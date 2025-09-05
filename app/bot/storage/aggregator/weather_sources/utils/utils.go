@@ -8,9 +8,10 @@ import (
 	"app/bot/models"
 )
 
+// убираем лишнее для температуры
 func ParseTemperature(s string) float64 {
 	s = strings.ReplaceAll(s, "−", "-")
-	s = strings.ReplaceAll(s, "+", "")
+	s = strings.TrimLeft(s, "+")
 	s = strings.TrimSpace(strings.TrimSuffix(s, "°"))
 	val, _ := strconv.ParseFloat(s, 64)
 	return val
@@ -18,8 +19,15 @@ func ParseTemperature(s string) float64 {
 
 func ParseFloat(s string) float64 {
 	s = strings.TrimSpace(s)
-	s = strings.Fields(s)[0]
-	val, _ := strconv.ParseFloat(s, 64)
+	if s == "" {
+		return 0
+	}
+	parts := strings.Fields(s)
+	if len(parts) == 0 {
+		return 0
+	}
+
+	val, _ := strconv.ParseFloat(parts[0], 64)
 	return val
 }
 
@@ -29,32 +37,37 @@ func ParseInt(s string) int {
 	return val
 }
 
+// агрегация данных
 type GenericSumData struct {
 	Temp        float64
 	FeelsLike   float64
 	Humidity    int
 	Wind        float64
-	Count       int
-	TempSamples []float64
+	Count       int       // количество samples
+	TempSamples []float64 // все значения температур для дебага
 }
 
+// накапливаем данные
 func (s *GenericSumData) AddSample(temp, feelsLike float64, humidity int, wind float64) {
 	s.Temp += temp
 	s.FeelsLike += feelsLike
 	s.Humidity += humidity
 	s.Wind += wind
-	s.TempSamples = append(s.TempSamples, temp)
+	s.TempSamples = append(s.TempSamples, temp) // сохраняем raw data
 	s.Count++
 }
 
+// усредняем и возвращаем готовую структуруЖ
 func (s *GenericSumData) Average(divideWind bool) models.PeriodWeather {
 	if s.Count == 0 {
 		return models.PeriodWeather{}
 	}
+
 	wind := s.Wind / float64(s.Count)
 	if divideWind {
-		wind = wind / 3.6
+		wind = wind / 3.6 // конвертация км/ч -> м/с
 	}
+
 	return models.PeriodWeather{
 		Temperature: s.Temp / float64(s.Count),
 		FeelsLike:   s.FeelsLike / float64(s.Count),
@@ -63,9 +76,22 @@ func (s *GenericSumData) Average(divideWind bool) models.PeriodWeather {
 	}
 }
 
-type SampleFunc[T any] func(elem T) (timestamp time.Time, temp, feelsLike float64, humidity int, wind float64, ok bool)
+type SampleFunc[T any] func(elem T) (
+	timestamp time.Time,
+	temp,
+	feelsLike float64,
+	humidity int,
+	wind float64,
+	ok bool,
+)
 
-func ProcessWeatherData[T any](data []T, city string, sample SampleFunc[T], divideWind bool, loc *time.Location) models.Forecast {
+func ProcessWeatherData[T any](
+	data []T,
+	city string,
+	sample SampleFunc[T],
+	divideWind bool,
+	loc *time.Location,
+) models.Forecast {
 	var morning, day, evening, night GenericSumData
 
 	localNow := time.Now().In(loc)
@@ -100,6 +126,7 @@ func ProcessWeatherData[T any](data []T, city string, sample SampleFunc[T], divi
 		}
 	}
 
+	// возвращаем финальный прогноз с усредненными данными
 	return models.Forecast{
 		City:    city,
 		Morning: morning.Average(divideWind),

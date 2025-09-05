@@ -1,6 +1,7 @@
 package logger
 
 import (
+	"log"
 	"os"
 	"path/filepath"
 	"time"
@@ -9,6 +10,8 @@ import (
 // StartRotation запускает ротацию логов
 func StartRotation() {
 	go func() {
+		cleanOldLogs()
+
 		ticker := time.NewTicker(24 * time.Hour) // Проверяем каждые 24 часа
 		defer ticker.Stop()
 
@@ -18,11 +21,12 @@ func StartRotation() {
 	}()
 }
 
-// cleanOldLogs удаляет логи старше 5 дней
+// удаляет логи старше 5 дней
 func cleanOldLogs() {
-	logsDir := "./storage/logs"
+	logsDir := "bot/logger/logs"
 	files, err := os.ReadDir(logsDir)
 	if err != nil {
+		log.Printf("Ошибка чтения директории логов: %v", err)
 		return
 	}
 
@@ -32,14 +36,19 @@ func cleanOldLogs() {
 		}
 
 		filePath := filepath.Join(logsDir, file.Name())
-		info, err := file.Info()
+
+		// получаем метаданные файла
+		info, err := os.Stat(filePath)
 		if err != nil {
+			log.Printf("Ошибка получения информации о файле %s: %v", file.Name(), err)
 			continue
 		}
 
-		// Удаляем файлы старше 5 дней
-		if time.Since(info.ModTime()) > 5*24*time.Hour {
-			os.Remove(filePath)
+		// удаляем файлы старше 5 дней
+		if time.Since(info.ModTime()) > 5*24*time.Hour { // время последнего изменения
+			if err := os.Remove(filePath); err != nil {
+				log.Printf("Ошибка удаления файла %s: %v", file.Name(), err)
+			}
 		}
 	}
 }

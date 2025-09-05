@@ -7,6 +7,7 @@ import (
 	"time"
 
 	"app/bot/config"
+	"app/bot/logger"
 	"app/bot/models"
 	"app/bot/storage/aggregator/weather_sources/utils"
 )
@@ -32,20 +33,6 @@ type AccuWeatherResponseElement struct {
 
 type AccuWeatherResponse []AccuWeatherResponseElement
 
-func processAccuWeatherData(data AccuWeatherResponse, city string) models.Forecast {
-	loc, _ := time.LoadLocation(config.CityData[city].Timezone)
-
-	sample := func(elem AccuWeatherResponseElement) (time.Time, float64, float64, int, float64, bool) {
-		dt, err := time.Parse(time.RFC3339, elem.DateTime)
-		if err != nil {
-			return time.Time{}, 0, 0, 0, 0, false
-		}
-		return dt, elem.Temperature.Value, elem.FeelsLike.Value, elem.Humidity, elem.Wind.Speed.Value, true
-	}
-
-	return utils.ProcessWeatherData(data, city, sample, true, loc)
-}
-
 func GetAccuWeatherForecast(city string) (models.Forecast, error) {
 	apiKey := config.Keys.AccuWeather
 	locationKey := config.AccuLocationKeys[city]
@@ -55,17 +42,39 @@ func GetAccuWeatherForecast(city string) (models.Forecast, error) {
 
 	resp, err := http.Get(url)
 	if err != nil {
+		logger.Error("AccuWeather: ошибка сети для %s: %v", city, err)
 		return models.Forecast{}, err
 	}
 	defer resp.Body.Close()
 
 	var data AccuWeatherResponse
-
 	if err := json.NewDecoder(resp.Body).Decode(&data); err != nil {
+		logger.Error("AccuWeather: ошибка парсинга JSON для %s: %v", city, err)
 		return models.Forecast{}, err
 	}
 
+	if len(data) == 0 {
+		logger.Error("AccuWeather: пустой ответ для города %s", city)
+		return models.Forecast{}, fmt.Errorf("пустой ответ от API")
+	}
+
 	return processAccuWeatherData(data, city), nil
+}
+
+func processAccuWeatherData(data AccuWeatherResponse, city string) models.Forecast {
+	loc, _ := time.LoadLocation(config.CityData[city].Timezone)
+
+	// извлекаем данные из каждого элемента
+	sample := func(elem AccuWeatherResponseElement) (time.Time, float64, float64, int, float64, bool) {
+		dt, err := time.Parse(time.RFC3339, elem.DateTime)
+		if err != nil {
+			return time.Time{}, 0, 0, 0, 0, false
+		}
+		return dt, elem.Temperature.Value, elem.FeelsLike.Value, elem.Humidity, elem.Wind.Speed.Value, true
+	}
+
+	// передаем в универсальные обработчик
+	return utils.ProcessWeatherData(data, city, sample, true, loc)
 }
 
 func GetAccuWeatherNow(city string) (models.PeriodWeather, error) {
@@ -77,6 +86,7 @@ func GetAccuWeatherNow(city string) (models.PeriodWeather, error) {
 
 	resp, err := http.Get(url)
 	if err != nil {
+		logger.Error("AccuWeatherNow: ошибка сети для %s: %v", city, err)
 		return models.PeriodWeather{}, err
 	}
 	defer resp.Body.Close()
@@ -84,10 +94,12 @@ func GetAccuWeatherNow(city string) (models.PeriodWeather, error) {
 	var data AccuWeatherResponse
 
 	if err := json.NewDecoder(resp.Body).Decode(&data); err != nil {
+		logger.Error("AccuWeatherNow: ошибка парсинга JSON для %s: %v", city, err)
 		return models.PeriodWeather{}, err
 	}
 
 	if len(data) == 0 {
+		logger.Error("AccuWeatherNow: пустой ответ для города %s", city)
 		return models.PeriodWeather{}, fmt.Errorf("пустой ответ от AccuWeather")
 	}
 

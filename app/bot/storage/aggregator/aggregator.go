@@ -7,6 +7,7 @@ import (
 	"sync"
 	"time"
 
+	"app/bot/logger"
 	"app/bot/models"
 	"app/bot/storage/aggregator/weather_sources"
 )
@@ -26,6 +27,8 @@ func GetNowData(city string) (models.PeriodWeather, error) {
 			mu.Lock()
 			sources = append(sources, accuNow)
 			mu.Unlock()
+		} else {
+			logger.Error("AccuWeatherNow: ошибка для %s: %v", city, err)
 		}
 	}()
 
@@ -35,6 +38,8 @@ func GetNowData(city string) (models.PeriodWeather, error) {
 			mu.Lock()
 			sources = append(sources, gismeteoNow)
 			mu.Unlock()
+		} else {
+			logger.Error("GismeteoNow: ошибка для %s: %v", city, err)
 		}
 	}()
 
@@ -44,6 +49,8 @@ func GetNowData(city string) (models.PeriodWeather, error) {
 			mu.Lock()
 			yandexPrecip = precip
 			mu.Unlock()
+		} else {
+			logger.Error("YandexNow: ошибка для %s: %v", city, err)
 		}
 	}()
 
@@ -51,6 +58,11 @@ func GetNowData(city string) (models.PeriodWeather, error) {
 
 	result := averageNowForecast(sources...)
 	result.Precipitation = yandexPrecip
+
+	if len(sources) == 0 {
+		logger.Error("GetNowData: нет данных ни от одного источника для %s", city)
+	}
+
 	return result, nil
 }
 
@@ -71,6 +83,7 @@ func GetTodayData(city string) (models.Forecast, error) {
 func GetTomorrowData(city string) (models.Forecast, error) {
 	tomorrowForecast, err := weather_sources.GetYandexTomorrowForecast(city)
 	if err != nil {
+		logger.Error("GetTomorrowData: ошибка для %s: %v", city, err)
 		return models.Forecast{}, fmt.Errorf("не удалось получить прогноз от Яндекса: %w", err)
 	}
 

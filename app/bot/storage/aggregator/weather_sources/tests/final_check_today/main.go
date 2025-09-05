@@ -1,17 +1,17 @@
 package main
 
 import (
+	"app/bot/config"
+	"app/bot/storage/aggregator"
+	"app/bot/storage/aggregator/format"
 	"fmt"
-	"weather_bot/aggregator"
-	"weather_bot/aggregator/format"
-	"weather_bot/config"
 )
 
 func main() {
 	city := "Владивосток"
 	config.LoadAll()
 
-	forecast, err := aggregator.GetFinalForecast(city)
+	forecast, err := aggregator.GetTodayData(city)
 	if err != nil {
 		fmt.Printf("❌ Ошибка при получении прогноза: %v\n", err)
 		return
@@ -20,4 +20,3 @@ func main() {
 	message := format.FormatTodayWeather(forecast)
 	fmt.Println(message)
 }
-

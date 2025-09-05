@@ -1,0 +1,15 @@
+.git
+.gitignore
+README.md
+*.db
+*.log
+*.example
+
+bot/config/env/api.env
+bot/config/accu_keys.yaml
+
+bot/storage/bd/
+bot/logger/logs/
+bot/storage/cache/
+
+bot/storage/aggregator/weather_sources/tests/

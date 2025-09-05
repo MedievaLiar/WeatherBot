@@ -1,0 +1,33 @@
+2025/09/05 02:58:22 logger.go:61: Система логирования инициализированы для даты 2025-09-05
+2025/09/05 02:58:22 logger.go:98: ERROR: Критическая ошибка: Post "https://api.telegram.org/bot7230987159:AAH2LbpabcPfwk080ruTeDeuS2xiC1YX69s/getMe": dial tcp: lookup api.telegram.org on 208.67.222.222:53: dial udp 208.67.222.222:53: connect: network is unreachable
+2025/09/05 02:58:22 logger.go:61: Система логирования инициализированы для даты 2025-09-05
+2025/09/05 02:58:22 logger.go:98: ERROR: Критическая ошибка: Post "https://api.telegram.org/bot7230987159:AAH2LbpabcPfwk080ruTeDeuS2xiC1YX69s/getMe": dial tcp: lookup api.telegram.org on 208.67.222.222:53: dial udp 208.67.222.222:53: connect: network is unreachable
+2025/09/05 02:58:22 logger.go:61: Система логирования инициализированы для даты 2025-09-05
+2025/09/05 02:58:22 logger.go:98: ERROR: Критическая ошибка: Post "https://api.telegram.org/bot7230987159:AAH2LbpabcPfwk080ruTeDeuS2xiC1YX69s/getMe": dial tcp: lookup api.telegram.org on 208.67.222.222:53: dial udp 208.67.222.222:53: connect: network is unreachable
+2025/09/05 02:58:23 logger.go:61: Система логирования инициализированы для даты 2025-09-05
+2025/09/05 02:58:23 logger.go:98: ERROR: Критическая ошибка: Post "https://api.telegram.org/bot7230987159:AAH2LbpabcPfwk080ruTeDeuS2xiC1YX69s/getMe": dial tcp: lookup api.telegram.org on 208.67.222.222:53: dial udp 208.67.222.222:53: connect: network is unreachable
+2025/09/05 02:58:24 logger.go:61: Система логирования инициализированы для даты 2025-09-05
+2025/09/05 02:58:24 logger.go:98: ERROR: Критическая ошибка: Post "https://api.telegram.org/bot7230987159:AAH2LbpabcPfwk080ruTeDeuS2xiC1YX69s/getMe": dial tcp: lookup api.telegram.org on 208.67.222.222:53: dial udp 208.67.222.222:53: connect: network is unreachable
+2025/09/05 02:58:25 logger.go:61: Система логирования инициализированы для даты 2025-09-05
+2025/09/05 02:58:25 logger.go:98: ERROR: Критическая ошибка: Post "https://api.telegram.org/bot7230987159:AAH2LbpabcPfwk080ruTeDeuS2xiC1YX69s/getMe": dial tcp: lookup api.telegram.org on 208.67.222.222:53: dial udp 208.67.222.222:53: connect: network is unreachable
+2025/09/05 02:58:29 logger.go:61: Система логирования инициализированы для даты 2025-09-05
+2025/09/05 02:58:29 logger.go:98: ERROR: Критическая ошибка: Post "https://api.telegram.org/bot7230987159:AAH2LbpabcPfwk080ruTeDeuS2xiC1YX69s/getMe": dial tcp: lookup api.telegram.org on 208.67.222.222:53: dial udp 208.67.222.222:53: connect: network is unreachable
+2025/09/05 02:58:35 logger.go:61: Система логирования инициализированы для даты 2025-09-05
+2025/09/05 02:58:35 logger.go:98: ERROR: Критическая ошибка: Post "https://api.telegram.org/bot7230987159:AAH2LbpabcPfwk080ruTeDeuS2xiC1YX69s/getMe": dial tcp: lookup api.telegram.org on 208.67.222.222:53: dial udp 208.67.222.222:53: connect: network is unreachable
+2025/09/05 02:58:48 logger.go:61: Система логирования инициализированы для даты 2025-09-05
+2025/09/05 02:58:48 logger.go:98: ERROR: Критическая ошибка: Post "https://api.telegram.org/bot7230987159:AAH2LbpabcPfwk080ruTeDeuS2xiC1YX69s/getMe": dial tcp: lookup api.telegram.org on 208.67.222.222:53: dial udp 208.67.222.222:53: connect: network is unreachable
+2025/09/05 02:59:14 logger.go:61: Система логирования инициализированы для даты 2025-09-05
+2025/09/05 02:59:14 logger.go:98: ERROR: Критическая ошибка: Post "https://api.telegram.org/bot7230987159:AAH2LbpabcPfwk080ruTeDeuS2xiC1YX69s/getMe": dial tcp: lookup api.telegram.org on 208.67.222.222:53: dial udp 208.67.222.222:53: connect: network is unreachable
+2025/09/05 03:00:05 logger.go:61: Система логирования инициализированы для даты 2025-09-05
+2025/09/05 03:00:05 logger.go:98: ERROR: Критическая ошибка: Post "https://api.telegram.org/bot7230987159:AAH2LbpabcPfwk080ruTeDeuS2xiC1YX69s/getMe": dial tcp: lookup api.telegram.org on 208.67.222.222:53: dial udp 208.67.222.222:53: connect: network is unreachable
+2025/09/05 03:01:05 logger.go:61: Система логирования инициализированы для даты 2025-09-05
+2025/09/05 03:01:05 logger.go:98: ERROR: Критическая ошибка: Post "https://api.telegram.org/bot7230987159:AAH2LbpabcPfwk080ruTeDeuS2xiC1YX69s/getMe": dial tcp: lookup api.telegram.org on 208.67.222.222:53: dial udp 208.67.222.222:53: connect: network is unreachable
+2025/09/05 03:02:05 logger.go:61: Система логирования инициализированы для даты 2025-09-05
+2025/09/05 06:09:05 logger.go:61: Система логирования инициализированы для даты 2025-09-05
+2025/09/05 06:09:56 logger.go:79: ДОБАВЛЕН ПОЛЬЗОВАТЕЛЬ: ID=5519824145, Username=@sohosquare, CurrentCity=Большой Камень, ForecastCity=Санкт-Петербург, WantDaily=true
+2025/09/05 06:38:55 logger.go:61: Система логирования инициализированы для даты 2025-09-05
+2025/09/05 06:42:18 logger.go:61: Система логирования инициализированы для даты 2025-09-05
+2025/09/05 06:48:04 logger.go:61: Система логирования инициализированы для даты 2025-09-05
+2025/09/05 06:48:32 logger.go:98: ERROR: GismeteoNow: ошибка для Большой Камень: ошибка при запросе: Get "https://www.gismeteo.ru/weather-bolshoy-kamen-12714/now/": context deadline exceeded (Client.Timeout exceeded while awaiting headers)
+2025/09/05 07:25:41 logger.go:79: ДОБАВЛЕН ПОЛЬЗОВАТЕЛЬ: ID=5519824145, Username=@sohosquare, CurrentCity=Владивосток, ForecastCity=Санкт-Петербург, WantDaily=true
+2025/09/05 09:42:17 logger.go:61: Система логирования инициализированы для даты 2025-09-05

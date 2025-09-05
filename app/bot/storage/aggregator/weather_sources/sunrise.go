@@ -7,6 +7,7 @@ import (
 	"time"
 
 	"app/bot/config"
+	"app/bot/logger"
 	"app/bot/models"
 )
 
@@ -22,6 +23,7 @@ func GetSunriseSunset(city string, day bool) (models.Forecast, error) {
 	info := config.CityData[city]
 	loc, _ := time.LoadLocation(info.Timezone)
 
+	// для  какой даты нужны данные
 	var targetDate time.Time
 
 	if day {
@@ -38,16 +40,19 @@ func GetSunriseSunset(city string, day bool) (models.Forecast, error) {
 
 	resp, err := http.Get(url)
 	if err != nil {
+		logger.Error("SunriseSunset: ошибка сети для %s: %v", city, err)
 		return models.Forecast{}, err
 	}
 	defer resp.Body.Close()
 
 	var data sunriseSunsetResponse
 	if err := json.NewDecoder(resp.Body).Decode(&data); err != nil {
+		logger.Error("SunriseSunset: ошибка парсинга JSON для %s: %v", city, err)
 		return models.Forecast{}, err
 	}
 
 	if data.Status != "OK" {
+		logger.Error("SunriseSunset: API ошибка для %s: %s", city, data.Status)
 		return models.Forecast{}, fmt.Errorf("sunrise API error: %s", data.Status)
 	}
 
@@ -55,6 +60,10 @@ func GetSunriseSunset(city string, day bool) (models.Forecast, error) {
 	sunsetTime, err2 := time.Parse(time.RFC3339, data.Results.Sunset)
 
 	if err1 != nil || err2 != nil {
+		logger.Error(
+			"SunriseSunset: неверный формат времени для %s: sunrise=%s sunset=%s",
+			city, data.Results.Sunrise, data.Results.Sunset,
+		)
 		return models.Forecast{}, fmt.Errorf("invalid time format from API")
 	}
 

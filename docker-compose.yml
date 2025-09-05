@@ -1,0 +1,17 @@
+services:
+  weather-bot:
+    build:
+      context: ./app
+      dockerfile: Dockerfile
+    container_name: weather_bot
+    network_mode: "host"
+    restart: unless-stopped
+    volumes:
+      - ./app/bot/storage/bd:/app/bot/storage/bd
+      - ./app/bot/logger/logs:/app/bot/logger/logs
+      - ./app/bot/storage/cache:/app/bot/storage/cache
+      - ./app/bot/config:/app/bot/config
+    env_file:
+      - ./app/bot/config/env/api.env
+    environment:
+      - TZ=Europe/Moscow

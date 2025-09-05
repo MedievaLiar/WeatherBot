@@ -4,7 +4,7 @@ import (
 	"testing"
 	"time"
 
-	"weather_bot/aggregator/weather_sources"
+	"app/bot/storage/aggregator/weather_sources"
 )
 
 func TestGetSunriseSunset(t *testing.T) {

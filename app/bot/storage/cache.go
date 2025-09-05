@@ -2,12 +2,14 @@ package storage
 
 import (
 	"fmt"
-	"gopkg.in/yaml.v3"
 	"os"
 	"path/filepath"
 	"sync"
 	"time"
 
+	"gopkg.in/yaml.v3"
+
+	"app/bot/logger"
 	"app/bot/models"
 	"app/bot/storage/aggregator"
 	"app/bot/storage/aggregator/format"
@@ -19,10 +21,10 @@ type cachedData[T any] struct {
 }
 
 var (
-	currentCities = make(map[int64]string)
-	cityLocks     = make(map[string]*sync.Mutex)
-	cityLocksMu   sync.Mutex
-	cacheMutex    sync.RWMutex
+	currentCities = make(map[int64]string)       // кэш текущих городов для chatID
+	cacheMutex    sync.RWMutex                   // мьютекс для доступа к currentCities
+	cityLocks     = make(map[string]*sync.Mutex) // мьютекс для каждого города
+	cityLocksMu   sync.Mutex                     // мьютекс для доступа к cityLocks
 )
 
 const (
@@ -41,12 +43,16 @@ func GetNowForecast(city string) (string, error) {
 	defer lock.Unlock()
 
 	data, ts, err := readCache[models.PeriodWeather](NowCacheDir, city)
+	// если кэша нет или он устарел
 	if err != nil || time.Since(ts) > NowTTL {
+		// запрашиваем данные
 		data, err = aggregator.GetNowData(city)
 		if err != nil {
 			return "", fmt.Errorf("ошибка получения погоды сейчас: %w", err)
 		}
+		// сохраняем в кэш
 		if err := writeCache(NowCacheDir, city, data); err != nil {
+			logger.Error("Ошибка для записи кэша для %s: %v", city, err)
 			return "", fmt.Errorf("ошибка записи кэша: %w", err)
 		}
 	}
@@ -93,13 +99,14 @@ func GetTomorrowForecast(city string) (string, error) {
 }
 
 func GetCurrentCity(chatID int64) (string, bool) {
-	cacheMutex.RLock()
+	cacheMutex.RLock() // много читателей
 	defer cacheMutex.RUnlock()
 
 	if city, ok := currentCities[chatID]; ok {
 		return city, true
 	}
 
+	// если нет в кэше - достаем из БД
 	currentCity, ok := ExtractCurrentCity(chatID)
 	if ok {
 		currentCities[chatID] = currentCity
@@ -134,6 +141,7 @@ func readCache[T any](dir, city string) (T, time.Time, error) {
 	}
 
 	if err := yaml.Unmarshal(data, &wrapper); err != nil {
+		logger.Error("Ошибка парсинга кэша %s: %v", path, err)
 		var empty T
 		return empty, time.Time{}, err
 	}
@@ -141,9 +149,10 @@ func readCache[T any](dir, city string) (T, time.Time, error) {
 	return wrapper.Data, wrapper.LastUpdated, nil
 }
 
+// atomic write
 func writeCache[T any](dir string, city string, value T) error {
 	path := getCachePath(dir, city)
-	tmp := path + ".tmp"
+	tmp := path + ".tmp" // временный файл для atomic write
 
 	wrapper := cachedData[T]{
 		LastUpdated: time.Now(),
@@ -159,21 +168,24 @@ func writeCache[T any](dir string, city string, value T) error {
 		return err
 	}
 
+	// пишем во временный файл
 	if err := os.WriteFile(tmp, data, 0644); err != nil {
 		return err
 	}
 
+	// atomic replace - переименовываем в финальный
 	return os.Rename(tmp, path)
 }
 
+// чтобы два одновременных запроса для одного города не делали лишних запросов к API
 func getCityLock(city string) *sync.Mutex {
-	cityLocksMu.Lock()
+	cityLocksMu.Lock() // блокируем доступ к мапе мьютексов
 	defer cityLocksMu.Unlock()
 
 	lock, ok := cityLocks[city]
 	if !ok {
-		lock = &sync.Mutex{}
-		cityLocks[city] = lock
+		lock = &sync.Mutex{}   // создаем новый мьютекс для города
+		cityLocks[city] = lock // сохраняем в мапу
 	}
 	return lock
 }
