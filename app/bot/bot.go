@@ -95,14 +95,19 @@ func handleMessage(msg *tgbotapi.Message) {
 		}
 	case "🏙️ Выбрать город":
 		askForCity(chatID, "current_city")
+
 	case "📅 Ежедневный прогноз":
 		showForecastMenu(chatID)
+
 	case "🌤️ Сейчас":
 		getWeather(chatID, storage.GetNowForecast)
+
 	case "☀️ Сегодня":
 		getWeather(chatID, storage.GetTodayForecast)
+
 	case "🌙 Завтра":
 		getWeather(chatID, storage.GetTomorrowForecast)
+
 	case "/admin":
 		if isAdmin(chatID) {
 			showAdminMenu(chatID)
@@ -110,6 +115,17 @@ func handleMessage(msg *tgbotapi.Message) {
 			logger.Error("💥🥷 Кто-то пытается пробраться в админку: %s", username)
 			send(chatID, "Вы не админ! 😜", mainKeyboard)
 		}
+
+	case "/restart":
+		err := storage.DeleteUser(chatID)
+		if err != nil {
+			log.Printf("Ошибка удаления: %v", err)
+			send(chatID, "❌ Ошибка при сбросе данных", mainKeyboard)
+		} else {
+			log.Println("Пользователь успешно удален")
+			send(chatID, messages.Welcome, mainKeyboard)
+		}
+
 	default:
 		send(chatID, messages.UnknownCommand, mainKeyboard)
 	}

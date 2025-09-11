@@ -128,6 +128,16 @@ func GetLogFile(filename string) ([]byte, error) {
 	return os.ReadFile(path)
 }
 
+func LogUserDeleted(user models.UserData) {
+	checkDate()
+
+	message := fmt.Sprintf("УДАЛЕН ПОЛЬЗОВАТЕЛЬ: ID=%d, Username=@%s, CurrentCity=%s, ForecastCity=%s",
+		user.ID, user.Username, user.CurrentCity, user.ForecastCity)
+
+	logger.Println(message)
+	fmt.Println(message)
+}
+
 // закрываем файл лога
 func Close() {
 	mutex.Lock()

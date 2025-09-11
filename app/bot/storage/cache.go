@@ -121,6 +121,12 @@ func SetCurrentCityInCache(chatID int64, city string) {
 	currentCities[chatID] = city
 }
 
+func RemoveUserFromCache(chatID int64) {
+	cacheMutex.Lock()
+	defer cacheMutex.Unlock()
+	delete(currentCities, chatID)
+}
+
 func GetForecastCity(chatID int64) (string, bool) {
 	forecastCity, ok := ExtractForecastCity(chatID)
 	return forecastCity, ok && forecastCity != ""

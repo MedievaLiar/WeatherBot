@@ -6,6 +6,7 @@ import (
 	"net/http"
 	"net/url"
 	"os"
+	"path/filepath"
 	"time"
 
 	"app/bot/config"
@@ -32,6 +33,21 @@ func SaveRawOpenWeatherJSON(city string) error {
 		return err
 	}
 
-	filename := fmt.Sprintf("aggregator/tests/openweather_check/raw_open/openweather_raw_%s.json", time.Now().Format("2006-01-02_15-04"))
+	const (
+		baseDir    = "bot/storage/aggregator/weather_sources/tests/openweather_check/raw_open"
+		filePrefix = "openweather_raw_"
+	)
+
+	// Создаем директорию
+	if err := os.MkdirAll(baseDir, 0755); err != nil {
+		return fmt.Errorf("не удалось создать директорию %s: %w", baseDir, err)
+	}
+
+	// Формируем путь к файлу
+	filename := filepath.Join(
+		baseDir,
+		fmt.Sprintf("%s%s.json", filePrefix, time.Now().Format("2006-01-02_15-04-05")),
+	)
+
 	return os.WriteFile(filename, raw, 0644)
 }

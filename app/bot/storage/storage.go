@@ -231,6 +231,41 @@ func GetAllUsers() ([]models.UserData, error) {
 	return users, nil
 }
 
+func DeleteUser(chatID int64) error {
+	user, err := GetUser(chatID)
+	if err != nil {
+		return fmt.Errorf("ошибка при получении пользователя для удаления %w", err)
+	}
+
+	if user == nil {
+		return fmt.Errorf("пользователь с ID %d не найден", chatID)
+	}
+
+	result, err := db.Exec("DELETE FROM users WHERE id = ?", chatID)
+	if err != nil {
+		return fmt.Errorf("ошибка при удалении пользователя: %w", err)
+	}
+
+	// проверяем что пользовательн удален (строки затронутые последним SQL запросом)
+	rowsAffected, err := result.RowsAffected()
+	if err != nil {
+		return fmt.Errorf("ошибка при проверке удаления пользователя: %w", err)
+	}
+
+	if rowsAffected == 0 {
+		return fmt.Errorf("пользователь с ID %d не найден", chatID)
+	}
+
+	// удаляем пользователя из кэша
+	RemoveUserFromCache(chatID)
+
+	// логируем удаление
+	logger.LogUserDeleted(*user)
+
+	log.Printf("Пользователь %d (@%s) удален из базы данных", chatID, user.Username)
+	return nil
+}
+
 // закрываем соединение с базой
 func CloseConnection() {
 	if db != nil {
