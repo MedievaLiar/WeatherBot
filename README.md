@@ -10,7 +10,6 @@
  - [Gismeteo (HTML-парсинг)](https://www.gismeteo.ru/)
  - [Яндекс.Погода (HTML-парсинг)](https://yandex.ru/pogoda/ru/fiorentino?via=reg&lat=43.909068&lon=12.459716)
  - [OpenWeatherMap API](https://openweathermap.org)
- - [AccuWeather API](https://www.accuweather.com/)
  - [Sunrise-Sunset API](https://sunrise-sunset.org/)
  - [NASA (шутка)]()
 
@@ -126,3 +125,4 @@ docker-compose logs -f weather-bot
 - В Яндекс Погоде используется BDUI(?), а API платное - гарантия на работу этого источника не предоставляется. За несколько месяцев несколько раз менялась верстка.
 - AccuWeather требует API-ключ для каждого города.
 - NASA пока не предоставляет реальных данных (но мы держим их в резерве 😉).
+- По состоянию на 11.09.2025 AccuWeather отключил бесплатное API :(

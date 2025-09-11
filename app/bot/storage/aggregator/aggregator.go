@@ -19,9 +19,10 @@ func GetNowData(city string) (models.PeriodWeather, error) {
 	sources := make([]models.PeriodWeather, 0, 2)
 	var yandexPrecip string
 
-	wg.Add(3)
+	wg.Add(2)
 
-	go func() {
+	// AccuWeather откатил бесплатный тариф, пока остается на всякий
+	/*go func() {
 		defer wg.Done()
 		if accuNow, err := weather_sources.GetAccuWeatherNow(city); err == nil {
 			mu.Lock()
@@ -30,7 +31,7 @@ func GetNowData(city string) (models.PeriodWeather, error) {
 		} else {
 			logger.Error("AccuWeatherNow: ошибка для %s: %v", city, err)
 		}
-	}()
+	}()*/
 
 	go func() {
 		defer wg.Done()
@@ -197,7 +198,7 @@ func getAllForecasts(city string) ([]models.Forecast, error) {
 	sources := map[string]func(string) (models.Forecast, error){
 		"yandex":      weather_sources.GetYandexTodayForecast,
 		"openweather": weather_sources.GetOpenWeatherForecast,
-		"accuweather": weather_sources.GetAccuWeatherForecast,
+		//"accuweather": weather_sources.GetAccuWeatherForecast,
 	}
 
 	for name, source := range sources {

@@ -3,6 +3,7 @@ package weather_sources
 import (
 	"encoding/json"
 	"fmt"
+	"io"
 	"net/http"
 	"time"
 
@@ -11,6 +12,13 @@ import (
 	"app/bot/models"
 	"app/bot/storage/aggregator/weather_sources/utils"
 )
+
+type AccuWeatherError struct {
+	Code    string `json:"Code"`
+	Message string `json:"Message"`
+}
+
+type AccuWeatherResponse []AccuWeatherResponseElement
 
 type AccuWeatherResponseElement struct {
 	DateTime    string `json:"DateTime"`
@@ -31,8 +39,6 @@ type AccuWeatherResponseElement struct {
 	PrecipitationType string `json:"PrecipitationType"`
 }
 
-type AccuWeatherResponse []AccuWeatherResponseElement
-
 func GetAccuWeatherForecast(city string) (models.Forecast, error) {
 	apiKey := config.Keys.AccuWeather
 	locationKey := config.AccuLocationKeys[city]
@@ -47,9 +53,27 @@ func GetAccuWeatherForecast(city string) (models.Forecast, error) {
 	}
 	defer resp.Body.Close()
 
+	// читаем весь ответ для проверки на ошибки
+	bodyBytes, err := io.ReadAll(resp.Body)
+	if err != nil {
+		logger.Error("AccuWeather: ошибка чтения ответа для %s: %v", city, err)
+		return models.Forecast{}, err
+	}
+
+	// проверяем, не является ли ответ ошибкой API
+	var apiError struct {
+		Code    string `json:"Code"`
+		Message string `json:"Message"`
+	}
+	if err := json.Unmarshal(bodyBytes, &apiError); err == nil && apiError.Code != "" {
+		logger.Error("AccuWeather API error for %s: %s - %s", city, apiError.Code, apiError.Message)
+		return models.Forecast{}, fmt.Errorf("API error: %s", apiError.Message)
+	}
+
+	// пытаемся парсить как массив (нормальный ответ)
 	var data AccuWeatherResponse
-	if err := json.NewDecoder(resp.Body).Decode(&data); err != nil {
-		logger.Error("AccuWeather: ошибка парсинга JSON для %s: %v", city, err)
+	if err := json.Unmarshal(bodyBytes, &data); err != nil {
+		logger.Error("AccuWeather: ошибка парсинга JSON для %s: %v. Response: %s", city, err, string(bodyBytes))
 		return models.Forecast{}, err
 	}
 
@@ -91,10 +115,27 @@ func GetAccuWeatherNow(city string) (models.PeriodWeather, error) {
 	}
 	defer resp.Body.Close()
 
-	var data AccuWeatherResponse
+	// Читаем весь ответ для проверки на ошибки
+	bodyBytes, err := io.ReadAll(resp.Body)
+	if err != nil {
+		logger.Error("AccuWeatherNow: ошибка чтения ответа для %s: %v", city, err)
+		return models.PeriodWeather{}, err
+	}
 
-	if err := json.NewDecoder(resp.Body).Decode(&data); err != nil {
-		logger.Error("AccuWeatherNow: ошибка парсинга JSON для %s: %v", city, err)
+	// Проверяем, не является ли ответ ошибкой API
+	var apiError struct {
+		Code    string `json:"Code"`
+		Message string `json:"Message"`
+	}
+	if err := json.Unmarshal(bodyBytes, &apiError); err == nil && apiError.Code != "" {
+		logger.Error("AccuWeatherNow API error for %s: %s - %s", city, apiError.Code, apiError.Message)
+		return models.PeriodWeather{}, fmt.Errorf("API error: %s", apiError.Message)
+	}
+
+	// Пытаемся парсить как массив (нормальный ответ)
+	var data AccuWeatherResponse
+	if err := json.Unmarshal(bodyBytes, &data); err != nil {
+		logger.Error("AccuWeatherNow: ошибка парсинга JSON для %s: %v. Response: %s", city, err, string(bodyBytes))
 		return models.PeriodWeather{}, err
 	}
 
