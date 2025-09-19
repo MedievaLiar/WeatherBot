@@ -15,5 +15,6 @@
 /app/bot/storage/cache/**
 
 # Тестовые данные
-/tests/app/bot/storage/aggregator/weather_sources/tests/**/*.json
+/app/bot/storage/aggregator/weather_sources/tests/**/*.json
+
 *.test
