@@ -89,10 +89,7 @@ func handleMessage(msg *tgbotapi.Message) {
 
 	switch text {
 	case "/start":
-		user, _ := storage.GetUser(chatID)
-		if user == nil {
-			send(chatID, messages.Welcome, mainKeyboard)
-		}
+		send(chatID, messages.Welcome, mainKeyboard)
 	case "🏙️ Выбрать город":
 		askForCity(chatID, "current_city")
 

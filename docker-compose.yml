@@ -5,15 +5,26 @@ services:
       dockerfile: Dockerfile
     container_name: weather_bot
     restart: unless-stopped
+
+    # Подключаем тома для сохранения данных
     volumes:
       - ./app/bot/storage/bd:/app/bot/storage/bd
       - ./app/bot/logger/logs:/app/bot/logger/logs
       - ./app/bot/storage/cache:/app/bot/storage/cache
       - ./app/bot/config:/app/bot/config
+
+    # Переменные окружения
     env_file:
       - ./app/bot/config/env/api.env
     environment:
       - TZ=Europe/Moscow
-    dns:
-      - 8.8.8.8
-      - 1.1.1.1
+
+    # DNS для стабильного доступа к Telegram
+    network_mode: "host"
+
+    # Ограничение ресурсов (для безопасности VPS)
+    deploy:
+      resources:
+        limits:
+          cpus: '0.5'
+          memory: 256M
