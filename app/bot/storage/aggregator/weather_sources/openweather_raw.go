@@ -34,7 +34,7 @@ func SaveRawOpenWeatherJSON(city string) error {
 	}
 
 	const (
-		baseDir    = "bot/storage/aggregator/weather_sources/tests/openweather_check/raw_open"
+		baseDir    = "bot/storage/aggregator/weather_sources/tests/openweather_check/raw_json"
 		filePrefix = "openweather_raw_"
 	)
 
