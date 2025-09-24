@@ -77,7 +77,7 @@ func GetTodayData(city string) (models.Forecast, error) {
 		return models.Forecast{}, fmt.Errorf("не получено ни одного прогноза")
 	}
 
-	result := averageTodayForecast(forecasts)
+	result := averageTodayForecast(city, forecasts)
 	return result, nil
 }
 
@@ -129,13 +129,13 @@ func averageNowForecast(sources ...models.PeriodWeather) models.PeriodWeather {
 	return result
 }
 
-func averageTodayForecast(forecasts []models.Forecast) models.Forecast {
+func averageTodayForecast(city string, forecasts []models.Forecast) models.Forecast {
 	if len(forecasts) == 0 {
 		return models.Forecast{}
 	}
 
 	result := models.Forecast{
-		City:    forecasts[0].City,
+		City:    city,
 		Sunrise: forecasts[0].Sunrise,
 		Sunset:  forecasts[0].Sunset,
 	}
