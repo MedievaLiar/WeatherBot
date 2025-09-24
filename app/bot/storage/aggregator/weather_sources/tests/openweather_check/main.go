@@ -9,7 +9,7 @@ import (
 func main() {
 	config.LoadAll()
 
-	city := "Екатеринбург"
+	city := "Большой Камень"
 
 	forecast, err := weather_sources.GetOpenWeatherForecast(city)
 	if err != nil {

@@ -44,7 +44,7 @@ func SaveRawAccuWeatherJSON(city string) error {
 		return fmt.Errorf("не удалось определить путь к текущему файлу")
 	}
 
-	saveDir := filepath.Join(filepath.Dir(thisFile), "tests/accuweather_check/raw_json")
+	saveDir := filepath.Join(filepath.Dir(thisFile), "raw_json")
 	// права доступа к директории
 	if err := os.MkdirAll(saveDir, 0755); err != nil {
 		return fmt.Errorf("не удалось создать директорию: %w", err)

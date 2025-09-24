@@ -74,8 +74,7 @@ WeatherBot/
 │   │   ├── config/                # Ключи, данные городов
 │   │   │   ├── env/
 │   │   │   │   └── api.env        # Переменные окружения
-│   │   │   ├── api_keys.yaml      # API ключи
-│   │   │   └── accu_keys.yaml     # AccuWeather ключи
+│   │   │   └── api_keys.yaml      # API ключи
 │   │   ├── messages/              # Шаблоны сообщений
 │   │   ├── logger/
 │   │   │    └── logs/             # Логи приложения
@@ -103,14 +102,12 @@ cd WeatherBot
 2) Настройте конфигурационные файлы:
 ```
 # Создайте директории для конфигов
-mkdir -p app/bot/config/env/
 
-# Создайте файлы с API ключами (примеры в config/example_*.yaml)
-cp config/example_api_keys.yaml app/bot/config/api_keys.yaml
-cp config/example_accu_keys.yaml app/bot/config/accu_keys.yaml
+# Создайте файл с API ключами (примеры в config/*.example)
+cp api_keys.yaml.example api_keys.yaml
 
 # Создайте файл с переменными окружения
-app/bot/config/env/api.env
+cp api.env.example api.env
 ```
 3) Запустите контейнер:
 ```
@@ -118,11 +115,10 @@ docker-compose up -d
 ```
 4) Просмотр логов:
 ```
-docker-compose logs -f weather-bot
+docker-compose logs -f
 ```
 # ⚠️ Known issues
 
 - В Яндекс Погоде используется BDUI(?), а API платное - гарантия на работу этого источника не предоставляется. За несколько месяцев несколько раз менялась верстка.
-- AccuWeather требует API-ключ для каждого города.
-- NASA пока не предоставляет реальных данных (но мы держим их в резерве 😉).
 - По состоянию на 11.09.2025 AccuWeather отключил бесплатное API :(
+- NASA пока не предоставляет реальных данных (но мы держим их в резерве 😉)
