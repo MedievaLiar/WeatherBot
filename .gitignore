@@ -7,12 +7,10 @@
 /app/bot/storage/bd/*.sqlite
 
 # Логи
-/app/bot/logger/logs/*.log
-/app/bot/logger/logs/**/*.log
+/app/bot/logger/logs/
 
 # Кэш
 /app/bot/storage/cache/
-/app/bot/storage/cache/**
 
 # Тестовые данные
 /app/bot/storage/aggregator/weather_sources/tests/**/*.json
